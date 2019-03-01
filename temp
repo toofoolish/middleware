@@ -1,3 +1,118 @@
-https://www.iyingdi.com/feed/list/user/v3?feedIdDown=157649&feedSize=30&system=web&token=
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-http://image.so.com/zj?ch=photography&sn=30&listtype=new&temp=1
+<title>暗网交易市场 - 用户控制面板 - 登录</title>
+
+
+
+<!-- Self_Code Start -->
+<!-- Self_Code End -->
+<link href="./assets/css/font-awesome.min.css?assets_version=29" rel="stylesheet">
+<link href="./styles/se_square_left/theme/stylesheet.css?assets_version=29" rel="stylesheet">
+<link href="./styles/se_square_left/theme/zh_cmn_hans/stylesheet.css?assets_version=29" rel="stylesheet">
+
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/se_square_left/theme/tweaks.css?assets_version=29" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-ucp ltr ">
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+					<div class="inner">
+<!-- Self_Code Start -->
+				<div style="float:left;">
+					<a href="http://lei6ezsexd4iq2tm.onion" title="首页"><span class="site_logo" style="background-image:url(/pay/image/deepmix.gif)"></span></a>
+				</div>
+				<div style="float:left;margin-top: 10px;color: #FFFFFF;">
+					<span style="font-size: 20px;">暗网交易市场</span><br>
+					<span style="font-size: 14px;">中文暗网担保交易</span>
+				</div>
+				<div style="float:right;margin-top:25px;">
+						<a href='' class='logo_right'></a>
+				</div> 
+<!-- Self_Code End -->
+			</div>
+					</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+	<ul>
+			</ul>
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" class="page-body" role="main">
+		
+		
+<form action="./ucp.php?mode=login&amp;sid=586aa258af634ad7a476e10b80f06450" method="post" id="login" data-focus="username">
+<div class="panel">
+	<div class="inner">
+
+	<div class="content">
+		<h2 class="login-title">登录</h2>
+
+		<fieldset class="fields1">
+				<dl>
+			<dt><label for="username">用户名：</label></dt>
+			<dd><input type="text" tabindex="1" name="username" id="username" size="25" value="" class="inputbox autowidth" /></dd>
+		</dl>
+		<dl>
+			<dt><label for="password">密码：</label></dt>
+			<dd><input type="password" tabindex="2" id="password" name="password" size="25" class="inputbox autowidth" autocomplete="off" /></dd>
+					</dl>
+						<dl>
+						<dd><label for="viewonline"><input type="checkbox" name="viewonline" id="viewonline" tabindex="5" /> 在这次登录中隐藏我的在线状态</label></dd>
+		</dl>
+		
+		<input type="hidden" name="redirect" value="./ucp.php?autim=61440488&amp;mode=login&amp;sid=586aa258af634ad7a476e10b80f06450" />
+
+		<dl>
+			<dt>&nbsp;</dt>
+			<dd><input type="hidden" name="sid" value="586aa258af634ad7a476e10b80f06450" />
+<input type="hidden" name="redirect" value="index.php" />
+<input type="submit" name="login" tabindex="6" value="登录" class="button1" /></dd>
+		</dl>
+		</fieldset>
+	</div>
+
+		</div>
+</div>
+
+
+	<div class="panel">
+		<div class="inner">
+
+		<div class="content">
+			<!-- Self_Code Start -->
+			<p><a href="./ucp.php?mode=register&amp;sid=586aa258af634ad7a476e10b80f06450&autim=61440489" class="button2">注册</a></p>
+			<!-- Self_Code End -->
+		</div>
+
+		</div>
+	</div>
+	<!-- Self_Code Start -->
+	<input type="hidden"  name="autim" id="autim" value="61440489" />
+	<!-- Self_Code End -->
+</form>
+
+	</div>
+</body>
+</html>

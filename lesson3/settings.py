@@ -22,6 +22,12 @@ IMAGES_STORE = './images'
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
+MYSQL_HOST = 'localhost'
+MYSQL_DATABASE = 'image'
+MYSQL_PORT = 3306
+MYSQL_USER = 'root'
+MYSQL_PASSWORD = '123qwe'
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -66,7 +72,8 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'lesson3.pipelines.ImagePipeline': 300,
+#    'lesson3.pipelines.ImagePipeline': 300,
+   'lesson3.pipelines.MysqlPipeline': 301,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

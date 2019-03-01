@@ -12,6 +12,7 @@ class BasicSpider(scrapy.Spider):
     name = 'basic'
     allowed_domains = ['web']
     start_urls = ['http://127.0.0.1:9312/properties/property_000003.html',]
+    
 
     def parse(self, response):
         # item = Lesson3Item()
