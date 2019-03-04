@@ -31,3 +31,13 @@ class ImageItem(Item):
     url = Field()
     title = Field()
     thumb = Field()
+
+class OnionItem(Item):
+    id = Field()
+    post_time = Field()
+    area = Field()
+    publisher = Field()
+    title = Field()
+    price = Field()
+    content = Field()
+    reader = Field()

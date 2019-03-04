@@ -11,9 +11,9 @@ class DBHelper():
 
         dbparams = dict(
             host=settings['MYSQL_HOST'],  #读取settings中的配置
-            db=settings['MYSQL_DBNAME'],
+            db=settings['MYSQL_DATABASE'],
             user=settings['MYSQL_USER'],
-            passwd=settings['MYSQL_PASSWD'],
+            passwd=settings['MYSQL_PASSWORD'],
             charset='utf8',  #编码要加上，否则可能出现中文乱码问题
             cursorclass=pymysql.cursors.DictCursor,
             use_unicode=False,
@@ -28,7 +28,7 @@ class DBHelper():
 
     #创建数据库
     def insert(self, item):
-        sql = "insert into tech_courses(title,image,brief,course_url,created_at) values(%s,%s,%s,%s,%s)"
+        sql = "insert into images(title,url,thumb) values(%s,%s,%s)"
         #调用插入的方法
         query = self.dbpool.runInteraction(self._conditional_insert, sql, item)
         #调用异常处理方法
