@@ -65,12 +65,30 @@ class DarkunionSpider(scrapy.Spider):
         page_num = response.xpath('//*[contains(@class,"page_b1")][-1]/text()').extract()
         
         base_url = response.url
-        if page_num and page_num != 1:
+        f = open('pages', 'a'):
+
+        if page_num > 1:
             for page in range(2, page_num + 1):
                 url = base_url + '&pagey=' + str(page) + '#pagey'
-                yield scrapy.Request(url, callback=self.parse_item, headers=self.header)
+                f.write(url + '\r\n')
+                # yield scrapy.Request(url, callback=self.parse_item, headers=self.header)
+        f.close()
+        yield scrapy.Request(response.url, callback=self.parse_item, headers=self.header)
 
     def parse_item(self, response):
+        # l = scrapy.loader.ItemLoader(item=Lesson3Item(), response=response)
+        item = OnionItem()
         table = response.xpath('//*[contains(@class,"m_area_a")]/tbody/tr')
+        
         for topic in table:
-            
+            if topic.xpath('/td[0]/text()').isdigit():
+                item['topic_id'] = response.url.split('=')[-1]
+                item['posttime'] = topic.xpath('/td[1]/text()')
+                item['area'] = topic.xpath('/td[2]/div/a/text()')
+                item['publisher'] = topic.xpath('/td[3]/div/text()')
+                item['title'] = topic.xpath('/td[4]/div/a/text()')
+                item['price'] = topic.xpath('/td[5]/text()')
+                #  item['content']
+                item['reader'] = topic.xpath('/td[7]/text()')
+                return item
+

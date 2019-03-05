@@ -34,6 +34,7 @@ class ImageItem(Item):
 
 class OnionItem(Item):
     id = Field()
+    topic_id = Field()
     post_time = Field()
     area = Field()
     publisher = Field()

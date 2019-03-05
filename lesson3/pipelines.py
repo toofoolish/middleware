@@ -73,3 +73,14 @@ class MysqlPipeline():
         )
         sql = 'INSERT INTO images VALUES(%s,%s,%s)'
         self.db_cur.execute(sql, values)
+
+class topicpipeline():
+    def open_spider(self, spider):
+        self.file = open('item', 'a')
+
+    def close_spider(self, spider):
+        self.file.close()
+
+    def process_item(self, item, spider):
+        for i, j in item:
+            self.file.write(i + ' ==> ' + j + '\r\n')
