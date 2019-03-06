@@ -34,11 +34,14 @@ class ImageItem(Item):
 
 class OnionItem(Item):
     id = Field()
-    topic_id = Field()
+    trade_id = Field()
+    sold_num = Field()
     post_time = Field()
     area = Field()
-    publisher = Field()
+    username = Field()
+    userid = Field()
+    reg_time = Field()
     title = Field()
     price = Field()
     content = Field()
-    reader = Field()
+    

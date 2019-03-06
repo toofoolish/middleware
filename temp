@@ -1,118 +1,55 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="zh-cmn-hans">
-<head>
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<title>暗网交易市场 - 用户控制面板 - 登录</title>
-
-
-
-<!-- Self_Code Start -->
-<!-- Self_Code End -->
-<link href="./assets/css/font-awesome.min.css?assets_version=29" rel="stylesheet">
-<link href="./styles/se_square_left/theme/stylesheet.css?assets_version=29" rel="stylesheet">
-<link href="./styles/se_square_left/theme/zh_cmn_hans/stylesheet.css?assets_version=29" rel="stylesheet">
-
-
-
-
-<!--[if lte IE 9]>
-	<link href="./styles/se_square_left/theme/tweaks.css?assets_version=29" rel="stylesheet">
-<![endif]-->
-
-
-
-
-
-</head>
-<body id="phpbb" class="nojs notouch section-ucp ltr ">
-
-
-<div id="wrap" class="wrap">
-	<a id="top" class="top-anchor" accesskey="t"></a>
-	<div id="page-header">
-		<div class="headerbar" role="banner">
-					<div class="inner">
-<!-- Self_Code Start -->
-				<div style="float:left;">
-					<a href="http://lei6ezsexd4iq2tm.onion" title="首页"><span class="site_logo" style="background-image:url(/pay/image/deepmix.gif)"></span></a>
-				</div>
-				<div style="float:left;margin-top: 10px;color: #FFFFFF;">
-					<span style="font-size: 20px;">暗网交易市场</span><br>
-					<span style="font-size: 14px;">中文暗网担保交易</span>
-				</div>
-				<div style="float:right;margin-top:25px;">
-						<a href='' class='logo_right'></a>
-				</div> 
-<!-- Self_Code End -->
-			</div>
-					</div>
-				<div class="navbar" role="navigation">
-	<div class="inner">
-	<ul>
-			</ul>
-	</div>
-</div>
-	</div>
-
 	
-	<a id="start_here" class="anchor"></a>
-	<div id="page-body" class="page-body" role="main">
-		
-		
-<form action="./ucp.php?mode=login&amp;sid=586aa258af634ad7a476e10b80f06450" method="post" id="login" data-focus="username">
-<div class="panel">
-	<div class="inner">
-
-	<div class="content">
-		<h2 class="login-title">登录</h2>
-
-		<fieldset class="fields1">
-				<dl>
-			<dt><label for="username">用户名：</label></dt>
-			<dd><input type="text" tabindex="1" name="username" id="username" size="25" value="" class="inputbox autowidth" /></dd>
-		</dl>
-		<dl>
-			<dt><label for="password">密码：</label></dt>
-			<dd><input type="password" tabindex="2" id="password" name="password" size="25" class="inputbox autowidth" autocomplete="off" /></dd>
-					</dl>
-						<dl>
-						<dd><label for="viewonline"><input type="checkbox" name="viewonline" id="viewonline" tabindex="5" /> 在这次登录中隐藏我的在线状态</label></dd>
-		</dl>
-		
-		<input type="hidden" name="redirect" value="./ucp.php?autim=61440488&amp;mode=login&amp;sid=586aa258af634ad7a476e10b80f06450" />
-
-		<dl>
-			<dt>&nbsp;</dt>
-			<dd><input type="hidden" name="sid" value="586aa258af634ad7a476e10b80f06450" />
-<input type="hidden" name="redirect" value="index.php" />
-<input type="submit" name="login" tabindex="6" value="登录" class="button1" /></dd>
-		</dl>
-		</fieldset>
-	</div>
-
-		</div>
-</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<html>
+<head>
+<meta name="renderer" content="webkit|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>分类查看</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
 
-	<div class="panel">
+<body class=deepbody>
+<div class=bodyall>
+
+	<div class="headerbar">
 		<div class="inner">
-
-		<div class="content">
-			<!-- Self_Code Start -->
-			<p><a href="./ucp.php?mode=register&amp;sid=586aa258af634ad7a476e10b80f06450&autim=61440489" class="button2">注册</a></p>
-			<!-- Self_Code End -->
-		</div>
-
-		</div>
+			<div style="float:left;">
+				<a href='http://lei6ezsexd4iq2tm.onion' title="首页"><span class="site_logo" style="background-image:url(/pay/image/deepmix.gif)"></span></a>
+			</div>
+			<div style="float:left;margin-top: 10px;color: #FFFFFF;">
+				<span style="font:20px/0.75em Arial,'Times New Roman','Microsoft YaHei',SimHei;">暗网交易市场</span><br><br>
+				<span style="font:14px/0.75em Arial,'Times New Roman','Microsoft YaHei',SimHei;">中文暗网担保交易</span>
+			</div>
+			<div style="float:right;margin-top:25px;">
+				<a href='/viewtopic.php?t=15947' class='logo_right'>300w酬劳[诚聘大牛指定入侵拿站]指定单，可靠不可靠，实力说话</a>
+			</div> 
+		</div> 
 	</div>
-	<!-- Self_Code Start -->
-	<input type="hidden"  name="autim" id="autim" value="61440489" />
-	<!-- Self_Code End -->
-</form>
+	
+	<div class="bodydiv" >
+	<div class="bodyinner" >
+		<hr color='#C0C0C0' size=0.5>
 
+
+<table class=vpm_02><tr><td></td></tr><tr><td><div style='float:left;'>暗网欢迎您：<span style='color:#'>alexandrite</span>&nbsp;|&nbsp;资产:<span class=t_3>&nbsp;&nbsp;0.00945&nbsp;&nbsp;</span>&nbsp;|&nbsp;BTC:USD: 3714.92&nbsp;|&nbsp;Tor Project! Human rights.</div><div style='float:right;'><a href='/pay/user_calls.php' class=index_list_title>呼叫信息</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='/ucp.php?i=pm&folder=inbox' class=index_list_title>短信息</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='/ucp.php?sid=28ee437ae4ad13ca342deae31b01e3cb&mode=logout' class=index_list_title>退出</a>&nbsp;&nbsp;&nbsp;&nbsp;</div></td></tr><tr><td></td></tr></table><form method='post' action='/pay/user_area.php?q_ea_id=10006&pagey=6' ><table class=t_m_2><tr><td colspan=2></td></tr><tr><td><a href='/pay/user_profile.php' class=text_index_top>账户</a></td><td><a href='/pay/user_deposit.php' class=text_index_top>充 值</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_withdrawal.php' class=text_index_top>提 币</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_history.php' class=text_index_top>资金记录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_trades.php' class=text_index_top>交易记录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_topic.php' class=text_index_top>我的发布</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_favorite.php' class=text_index_top>我的收藏</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/u_info.php?inid=1' class='text_index_top'>资费标准</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_vip.php?type=1' class='t_2'>交易激活</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='http://deepcnxpfgmausrq.onion' class=text_index_top>副站-论坛</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/index.php' class=text_p_link>返回首页</a></td></tr><tr><td colspan=2></td></tr><tr><td><a href='/pay/user_area.php' class=text_index_top>分类</a></td><td><a href='/pay/user_area.php?q_ea_id=10001' class=text_index_top>数据</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_area.php?q_ea_id=10006' class=text_index_top>服务</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_area.php?q_ea_id=10002' class=text_index_top>虚拟</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_area.php?q_ea_id=10007' class=text_index_top>实体</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_area.php?q_ea_id=10003' class=text_index_top>技术</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_area.php?q_ea_id=10010' class=text_index_top>其它</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_area.php?q_ea_id=10005' class=text_index_top>基础</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_area.php?q_ea_id=10004' class=text_index_top>影视</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_area.php?q_ea_id=10009' class=text_index_top>私拍</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_area.php?q_ea_id=10008' class=text_index_top>卡料</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='http://deepcnxpfgmausrq.onion' class=text_index_top>求购</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='http://deepcnxpfgmausrq.onion' class=text_index_top>悬赏</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='/pay/user_area.php?q_ea_id=30001' class=text_index_top>合作</a>&nbsp;&nbsp;|&nbsp;&nbsp;</td></tr></table></form><table class=m_area_a><tr><td colspan=10><div style='float:left;'><a href='/posting.php?mode=post&f=146&ea=11006'><button class=button_p1>点此发布</button></a></div>&nbsp;&nbsp;&nbsp;&nbsp;服务-接单内交易帖列表<div style='float:right;'><a href='/pay/user_area.php?q_ea_id=10006&amp;pagey=1#pagey'><button class=page_b1>1</button></a><a href='/pay/user_area.php?q_ea_id=10006&amp;pagey=2#pagey'><button class=page_b1>2</button></a><a href='/pay/user_area.php?q_ea_id=10006&amp;pagey=3#pagey'><button class=page_b1>3</button></a><a href='/pay/user_area.php?q_ea_id=10006&amp;pagey=4#pagey'><button class=page_b1>4</button></a><a href='/pay/user_area.php?q_ea_id=10006&amp;pagey=5#pagey'><button class=page_b1>5</button></a>&nbsp;<button class=page_b2>6</button>&nbsp;</div><a name=pagey1></a></td></tr><tr><td>ID</td><td>发布时间</td><td>区域</td><td>发布人</td><td>标题</td><td>单价</td><td>保护期</td><td>关注度</td><td></td><td></td></tr><tr><td colspan=10></td></tr><tr><td>251</td><td>04-21 20:19</td><td><div class='length_85'><a href='/pay/user_area.php?q_ea_id=10006' class=text_p_link>服务-接单</a></div></td><td><div class=length_75>anonymous</div></td><td><div class='length_400'><a href='/viewtopic.php?t=2833' class=text_p_link>全国接亡单（除新疆，西藏等偏远地区）</a></div></td><td>7.9381</td><td>15天</td><td>7320</td><td><a href='/viewtopic.php?t=2833&joiner=9902' class=text_p_link>打开</a></td><td></td></tr><tr><td colspan=10></td></tr><tr><td>252</td><td>03-22 20:29</td><td><div class='length_85'><a href='/pay/user_area.php?q_ea_id=10006' class=text_p_link>服务-接单</a></div></td><td><div class=length_75>ssekai</div></td><td><div class='length_400'><a href='/viewtopic.php?t=2451' class=text_p_link>广东，亡残，国内最低价，有其他事缺人手可联系</a></div></td><td>1.58762</td><td>15天</td><td>12489</td><td><a href='/viewtopic.php?t=2451&joiner=9902' class=text_p_link>打开</a></td><td></td></tr><tr><td colspan=10></td></tr><tr><td colspan=10><div style='float:right;'><a href='/pay/user_area.php?q_ea_id=10006&amp;pagey=1#pagey'><button class=page_b1>1</button></a><a href='/pay/user_area.php?q_ea_id=10006&amp;pagey=2#pagey'><button class=page_b1>2</button></a><a href='/pay/user_area.php?q_ea_id=10006&amp;pagey=3#pagey'><button class=page_b1>3</button></a><a href='/pay/user_area.php?q_ea_id=10006&amp;pagey=4#pagey'><button class=page_b1>4</button></a><a href='/pay/user_area.php?q_ea_id=10006&amp;pagey=5#pagey'><button class=page_b1>5</button></a>&nbsp;<button class=page_b2>6</button>&nbsp;</div></td></tr></table>	</div>
 	</div>
+</div>
+<br><br>
 </body>
 </html>
