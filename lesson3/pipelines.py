@@ -82,5 +82,5 @@ class topicpipeline():
         self.file.close()
 
     def process_item(self, item, spider):
-        for i, j in item:
-            self.file.write(i + ' ==> ' + j + '\r\n')
+        for i in item:
+            self.file.write(i + ' ==> ' + item[i] + '\r\n')
