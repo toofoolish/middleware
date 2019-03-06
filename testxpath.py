@@ -1,5 +1,5 @@
 from lxml import etree
-
+import json
 # f = open('temp').readlines()
 # f.xpath()
 # print(f)
@@ -25,7 +25,11 @@ print(content)
 # print(next)
 # txt = response.xpath('//td[text()="本单成交:"]/following::*[1]/text()')
 # print(txt)
-# d = { 'a': 'ad', 'b': '34'}
+d = { 'a': 'ad', 'b': '34'}
 # print(d)
 # for i in d:
 #     print(i + '=>' + d[i])
+with open('data.json', 'a') as f:
+    json.dump(d, f)
+with open('data.json', 'r') as f:
+    print(json.loads(f))

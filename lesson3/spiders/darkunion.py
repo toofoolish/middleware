@@ -79,52 +79,29 @@ class DarkunionSpider(scrapy.Spider):
             next_url = urllib.parse.urljoin(base_url, next_page[0])
             f.write(next_url + '\r\n')
             f.close()
-            # yield scrapy.Request(next_url, callback=self.parse_page, headers=self.header)
-        # next_page = response.xpath('//button[contains(@class,"page_b2")][2]/following::*/button/text()')
-        # if next_page:
-        #      url = base_url + '&pagey=' + str(next_page) + '#pagey'
-        # try:
-        #     page_num = response.xpath('//*[contains(@class,"page_b1")]/text()').extract()[-1]
-        #     page_num = int(page_num)
-            
-        #     f = open('pages', 'a')
-        #     f.write('*****************************************************\r\n')
-        #     if page_num > 1:
-        #         for page in range(2, page_num + 1):
-        #             url = base_url + '&pagey=' + str(page) + '#pagey'
-        #             f.write(url + '\r\n')
-        #             # yield scrapy.Request(url, callback=self.parse_page, headers=self.header)
-        #     f.close()
-        # except:
-        #     print(response.url + ' has no more pages!!!')
-        
+            yield scrapy.Request(next_url, callback=self.parse_page, headers=self.header)               
 
-    def parse_item(self, response):
-        # l = scrapy.loader.ItemLoader(item=Lesson3Item(), response=response)
-        # print('*********************************\r\n')
-        # print(response.url + '\r\n')
-        # print('*********************************\r\n')
-        item = OnionItem()
-        # trade_id = Field()
-        # sold_num = Field()
-        # post_time = Field()
-        # area = Field()
-        # username = Field()
-        # userid = Field()/html/body/div/div[2]/ul/table[2]/tbody/tr[5]/td[2]
-        # reg_time = Field()/html/body/div/div[2]/ul/table[2]/tbody/tr[7]/td[2]
-        # title = Field()/html/body/div/div[2]/ul/form[1]/table/tbody/tr[3]/td[6]
-        # price = Field()
-        # content = Field()
-        item['trade_id'] = response.url.split('=')[-1]
-        item['sold_num'] = response.xpath('//*[contains(@class,"v_table_1")]/tbody//tr[7]/td[4]/text()').extract()[0]
-        item['posttime'] = response.xpath('//*[contains(@class,"v_table_1")]/tbody//tr[3]/td[6]/text()').extract()[0]
+    def parse_item(self, response):        
+        item = OnionItem()        
+        item['trade_id'] = response.url.split('=')[-1]        
+        item['sold_num'] = response.xpath('//td[text()="本单成交:"]/following::*[1]/text()').extract()[0]
+        item['post_time'] = response.xpath('//td[text()="交易发布时间:"]/following::*[1]/text()').extract()[0]
         item['area'] = response.xpath('//*[contains(@class,"link_blue")]/text()').extract()[1]
-        item['username'] = response.xpath('//*[contains(@class,"page_b1")]/text()').extract()[0]
-        item['userid'] = response.xpath('//*[contains(@class,"v_table_1")]/tbody//tr[5]/td[2]/text()').extract()[0]
-        item['reg_time'] = response.xpath('//*[contains(@class,"v_table_1")]/tbody//tr[7]/td[2]/text()').extract()[0]
-        item['title'] = response.xpath('//*[contains(@class,"first")]/text()').extract()[0]
-        item['price'] = response.xpath('//*[contains(@class,"t_2")]/text()').extract()[2]
-        item['content'] = response.xpath('//*[contains(@class,"content")]/text()').extract()[0]
+        item['username'] = response.xpath('//td[text()="账户名称:"]/following::*[1]/text()').extract()[0]
+        item['userid'] = response.xpath('//td[text()="账户编号:"]/following::*[1]/text()').extract()[0]
+        item['reg_time'] = response.xpath('//td[text()="注册时间"]/following::*[1]/text()').extract()[0]
+        item['title'] = response.xpath('//*[contains(@class,"first")]/a/text()').extract()[0]
+        item['price'] = response.xpath('//*[contains(@class,"t_2")]/text()').extract()[-1]
+        lines = response.xpath('//div[contains(@class,"content")]/text()').extract()
+        content = ''
+        for line in lines:
+            content += line.strip()
+        item['content'] = content
+        # item['content'] = response.xpath('//div[contains(@class,"content")]/text()').extract()
         # item['reader'] = topic.xpath('/td[7]/text()')
+        print('***********************\r\n')
+        for i in item:
+            print(i + ' ==>> ' + item[i] + '\r\n')
+        print('***********************\r\n')
         return item
 
