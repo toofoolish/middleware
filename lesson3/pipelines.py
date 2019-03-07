@@ -56,9 +56,9 @@ class MysqlPipeline():
             item['price'],
             item['content'],
         )
-        sql = "INSERT INTO EMPLOYEE(FIRST_NAME, \
-                LAST_NAME, AGE, SEX, INCOME) \
-                VALUES ('%s', '%s',  %s,  '%s',  %s)" 
+        sql = "INSERT INTO FORUM(trade_id, sold_num, \
+                post_time, area, username, userid, reg_time, title, price, content) \
+                VALUES (%s, %s,  '%s',  '%s',  '%s', %s, '%s', '%s', %s, '%s')" 
         try:
             self.cursor.execute(sql,values)
             self.db.commit()
