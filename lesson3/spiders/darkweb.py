@@ -5,13 +5,14 @@ import urllib
 from lesson3.items import OnionItem
 import time, random
 class DarkunionSpider(scrapy.Spider):
-    name = 'onepage'
+    name = 'darkweb'
     # allowed_domains = ['dark']
-    start_urls = ['http://22u75kqyl666joi2.onion/']
+    start_urls = ['http://22u75kqyl666joi2.onion/ucp.php?mode=login']
     post_data = {
         "username": "alfabeta",
         "password": "22u75kqyl666joi2",
         "login": "登录",
+        "redirect": "./index.php?"
     }
     header = {
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
@@ -24,29 +25,22 @@ class DarkunionSpider(scrapy.Spider):
 
     def start_requests(self):
         for url in self.start_urls:
-            yield scrapy.Request(url, callback=self.parse_login, headers=self.header, 
-            # meta={'proxy': '127.0.0.1:8118'}
+            return [
+            FormRequest(
+                url,
+                formdata=self.post_data,
+                callback=self.parse_after,
+                headers=self.header,
             )
-    
-    def parse_login(self, response):
-        
-        # autim = response.xpath('//*[@name="autim"]/@value').extract()
-        # print(autim)
-        # sid = response.xpath('//*[@name="sid"]/@value').extract()
-        # print(sid)
-        # self.post_data['autim'] = autim
-        # self.post_data['sid'] = sid
-        return FormRequest.from_response(
-            response,
-            formdata=self.post_data,
-            callback=self.parse_after,
-            headers=self.header,
-        )
-        
+        ]
+       
     def parse_after(self, response):
         f = open('web.html', 'w')
         f.write(response.text)
         f.close()
+        forum_url = response.xpath('//*[contains(@class,"forumtitle")]/@href').extract()
+        for url in forum_url:
+            yield scrapy.Request(urllib.parse.urljoin(response.url, url), callback=self.parse_page, headers=self.header)
         # index_url =  response.xpath('//*[contains(@class,"text_index_top")]//@href').extract()
         # index_title =  response.xpath('//*[contains(@class,"text_index_top")]/text()').extract()
         # for i in range(len(index_title)):
@@ -60,28 +54,33 @@ class DarkunionSpider(scrapy.Spider):
         #         f.write(aera_url + '\r\n')
         #         yield scrapy.Request(aera_url, callback=self.parse_page, headers=self.header)
         # f.close()
-    def parse_page(self, response):
-        base_url = response.url
-        
-        topic_url = response.xpath('//a[text()="打开"]/@href').extract()
-        # print('*********************************\r\n')
-        # print(topic_url + '\r\n')
-        # print('*********************************\r\n')
-        
+    def parse_page(self, response):        
+        topic_url = response.xpath('//*[contains(@class,"topictitle")]/@href').extract()
         for url in topic_url:
-            f = open('topic', 'a')
-            time.sleep(round(random.random()*2,1))
-            f.write('*****************************************************\r\n')
-            f.write(urllib.parse.urljoin(base_url, url) + '\r\n')
-            f.close()
-            yield scrapy.Request(urllib.parse.urljoin(base_url, url), callback=self.parse_item, headers=self.header)
-        
-        next_page = response.xpath('//button[contains(@class,"page_b2")]/following::a[1]/@href').extract()
+            
+            # yield scrapy.Request(urllib.parse.urljoin(response.url, url), callback=self.parse_item, headers=self.header)
+            print('*********************************')
+            print(urllib.parse.urljoin(response.url, url))
+        next_page = response.xpath('//li[contains(@class,"active")]/following::a[1]/@href').extract()
         if next_page:
-            f = open('pages', 'a')
-            next_url = urllib.parse.urljoin(base_url, next_page[0])
-            f.write(next_url + '\r\n')
-            f.close()
+            time.sleep(round(random.random()*2,1))
+            next_url = urllib.parse.urljoin(response.url, next_page[0])
+            yield scrapy.Request(next_url, callback=self.parse_page, headers=self.header)
+        
+        # for url in topic_url:
+        #     f = open('topic', 'a')
+        #     time.sleep(round(random.random()*2,1))
+        #     f.write('*****************************************************\r\n')
+        #     f.write(urllib.parse.urljoin(base_url, url) + '\r\n')
+        #     f.close()
+        #     yield scrapy.Request(urllib.parse.urljoin(base_url, url), callback=self.parse_item, headers=self.header)
+        
+        # next_page = response.xpath('//button[contains(@class,"page_b2")]/following::a[1]/@href').extract()
+        # if next_page:
+        #     f = open('pages', 'a')
+        #     next_url = urllib.parse.urljoin(base_url, next_page[0])
+        #     f.write(next_url + '\r\n')
+        #     f.close()
             # yield scrapy.Request(next_url, callback=self.parse_page, headers=self.header)
         
         
