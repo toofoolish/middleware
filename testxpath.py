@@ -17,10 +17,9 @@ print(title)
 # txt = response.xpath('//a[text()="打开"]/')
 # print(txt)
 pages = response.xpath('//div[contains(@class,"content")]/text()')
-print(pages)
-content = ''
-for line in pages:
-    content += line.strip()
+# print(pages)
+content = ''.join(pages).strip()
+print(len(content))
 print(content)
 # next = response.xpath('//button[contains(@class,"page_b2")]/following::a[1]/@href')
 # print(next)
