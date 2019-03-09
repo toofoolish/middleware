@@ -44,4 +44,10 @@ class OnionItem(Item):
     title = Field()
     price = Field()
     content = Field()
-    
+
+class DarkWebItem(Item):
+    title = Field()
+    price = Field()
+    post_time = Field()
+    username = Field()
+    comment = Field()
