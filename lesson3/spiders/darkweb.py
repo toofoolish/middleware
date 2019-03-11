@@ -66,6 +66,7 @@ class DarkunionSpider(scrapy.Spider):
         f = open(cwd + os.sep + self.location + os.sep + filename, 'w')
         f.write(response.text)
         f.close()
+        
 
     def existorcreate(self):
         if not os.path.exists(self.location):

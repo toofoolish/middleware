@@ -31,12 +31,7 @@ class ImagePipeline(ImagesPipeline):
 
 class MysqlPipeline():
     def open_spider(self, spider):
-        db = 'tot'
-        host = 'localhost'
-        port = 3306
-        user = 'test'
-        passwd = '123qwe'
-        self.db =pymysql.connect(host=host, port=port, db=db, user=user, passwd=passwd, charset='utf8')
+        self.db = pymysql.connect("162.211.225.42","test","123qwe","tot" )
         self.cursor = self.db.cursor()
         # self.db_conn = pymysql.connect(self.host, self.user, self.password, self.database, charset='utf-8', port=self.port)
         # self.cursor = self.db.cursor()
@@ -60,10 +55,12 @@ class MysqlPipeline():
                 post_time, area, username, userid, reg_time, title, price, content) \
                 VALUES (%s, %s,  '%s',  '%s',  '%s', %s, '%s', '%s', %s, '%s')" 
         try:
-            self.cursor.execute(sql,values)
+            self.cursor.execute(sql % values)
             self.db.commit()
+            print('save to mysql!')
         except:
             self.db.rollback()
+            print('Failed to save!')
 
         # return item
     # def insert_db(self, item):

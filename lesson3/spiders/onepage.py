@@ -3,7 +3,7 @@ import scrapy
 from scrapy import FormRequest, Request
 import urllib
 from lesson3.items import OnionItem
-import time, random
+import time, random, re
 class DarkunionSpider(scrapy.Spider):
     name = 'onepage'
     # allowed_domains = ['dark']
@@ -103,17 +103,27 @@ class DarkunionSpider(scrapy.Spider):
         item['trade_id'] = response.url.split('=')[-1]
         
         item['sold_num'] = response.xpath('//td[text()="本单成交:"]/following::*[1]/text()').extract()[0]
-        item['post_time'] = response.xpath('//td[text()="交易发布时间:"]/following::*[1]/text()').extract()[0]
-        item['area'] = response.xpath('//*[contains(@class,"link_blue")]/text()').extract()[1]
+        post_time = response.xpath('//p[contains(@class, "author")]/text()').extract()[-1].strip()
+        yy = post_time[:4]
+        mm = post_time.split('-')[1][:-1]
+        if len(mm) == 1:
+            mm = '0' + mm
+        dd = post_time.split('-')[-1][:2]
+        tt = post_time.split(':')[0][-2:]
+        ff = post_time.split(':')[1].rstrip()
+        # print(yy+mm+dd+tt+ff+'00')
+        item['post_time'] = yy+mm+dd+tt+ff+'00'
+        item['area'] = response.xpath('//*[contains(@class,"link_blue")]/text()').extract()[1].strip()
         item['username'] = response.xpath('//td[text()="账户名称:"]/following::*[1]/text()').extract()[0]
         item['userid'] = response.xpath('//td[text()="账户编号:"]/following::*[1]/text()').extract()[0]
-        item['reg_time'] = response.xpath('//td[text()="注册时间"]/following::*[1]/text()').extract()[0]
+        reg_time = response.xpath('//dd[contains(@class, "profile-joined")]/text()').extract()[0]
+        patten = re.compile('[0-9]+')
+        reg_time = ''.join(patten.findall(reg_time))
+        item['reg_time'] = reg_time + '00'
         item['title'] = response.xpath('//*[contains(@class,"first")]/a/text()').extract()[0]
         item['price'] = response.xpath('//*[contains(@class,"t_2")]/text()').extract()[-1]
         lines = response.xpath('//div[contains(@class,"content")]/text()').extract()
-        content = ''
-        for line in lines:
-            content += line.strip()
+        content = ''.join(lines).strip()
         item['content'] = content
         # item['content'] = response.xpath('//div[contains(@class,"content")]/text()').extract()
         # item['reader'] = topic.xpath('/td[7]/text()')
