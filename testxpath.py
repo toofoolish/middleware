@@ -20,7 +20,7 @@ pages = response.xpath('//div[contains(@class,"content")]/text()')
 # print(pages)
 content = ''.join(pages).strip()
 print(len(content))
-print(content)
+print(content.replace('\n',''))
 # next = response.xpath('//button[contains(@class,"page_b2")]/following::a[1]/@href')
 # print(next)
 # txt = response.xpath('//td[text()="本单成交:"]/following::*[1]/text()')
@@ -35,7 +35,14 @@ patten = re.compile('[0-9]+')
 # reg = '' += i for i in patten.findall(time)
 reg = ''.join(patten.findall(time))
 print(reg + '00')
-
+yy = time[:4]
+mm = time.split('-')[1][:-1]
+if len(mm) == 1:
+    mm = '0' + mm
+dd = time.split('-')[-1][:2]
+tt = time.split(':')[0][-2:]
+ff = time.split(':')[1].rstrip()
+print(yy+mm+dd+tt+ff+'00')
 time = response.xpath('//p[contains(@class, "author")]/text()')[-1]
 print(time)
 yy = time[:4]

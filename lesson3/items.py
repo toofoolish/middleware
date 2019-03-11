@@ -33,7 +33,7 @@ class ImageItem(Item):
     thumb = Field()
 
 class OnionItem(Item):
-    id = Field()
+    
     trade_id = Field()
     sold_num = Field()
     post_time = Field()

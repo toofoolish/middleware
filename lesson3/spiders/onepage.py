@@ -116,15 +116,20 @@ class DarkunionSpider(scrapy.Spider):
         item['area'] = response.xpath('//*[contains(@class,"link_blue")]/text()').extract()[1].strip()
         item['username'] = response.xpath('//td[text()="账户名称:"]/following::*[1]/text()').extract()[0]
         item['userid'] = response.xpath('//td[text()="账户编号:"]/following::*[1]/text()').extract()[0]
-        reg_time = response.xpath('//dd[contains(@class, "profile-joined")]/text()').extract()[0]
-        patten = re.compile('[0-9]+')
-        reg_time = ''.join(patten.findall(reg_time))
-        item['reg_time'] = reg_time + '00'
+        reg_time = response.xpath('//dd[contains(@class, "profile-joined")]/text()').extract()[0].strip()
+        yy = reg_time[:4]
+        mm = reg_time.split('-')[1][:-1]
+        if len(mm) == 1:
+            mm = '0' + mm
+        dd = reg_time.split('-')[-1][:2]
+        tt = reg_time.split(':')[0][-2:]
+        ff = reg_time.split(':')[1].rstrip()
+        item['reg_time'] = yy+mm+dd+tt+ff+'00'
         item['title'] = response.xpath('//*[contains(@class,"first")]/a/text()').extract()[0]
         item['price'] = response.xpath('//*[contains(@class,"t_2")]/text()').extract()[-1]
         lines = response.xpath('//div[contains(@class,"content")]/text()').extract()
         content = ''.join(lines).strip()
-        item['content'] = content
+        item['content'] = content.replace('\n', '')
         # item['content'] = response.xpath('//div[contains(@class,"content")]/text()').extract()
         # item['reader'] = topic.xpath('/td[7]/text()')
         print('***********************\r\n')
