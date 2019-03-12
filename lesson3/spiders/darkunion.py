@@ -58,13 +58,8 @@ class DarkunionSpider(scrapy.Spider):
                 yield scrapy.Request(aera_url, callback=self.parse_page, headers=self.header)
         f.close()
     def parse_page(self, response):
-        base_url = response.url
-        
-        topic_url = response.xpath('//a[text()="打开"]/@href').extract()
-        # print('*********************************\r\n')
-        # print(topic_url + '\r\n')
-        # print('*********************************\r\n')
-        
+        base_url = response.url        
+        topic_url = response.xpath('//a[text()="打开"]/@href').extract()                
         for url in topic_url:
             f = open('topic', 'a')
             time.sleep(round(random.random()*2,1))
@@ -82,21 +77,37 @@ class DarkunionSpider(scrapy.Spider):
             yield scrapy.Request(next_url, callback=self.parse_page, headers=self.header)               
 
     def parse_item(self, response):        
-        item = OnionItem()        
-        item['trade_id'] = response.url.split('=')[-1]        
+        item = OnionItem()
+        item['trade_id'] = response.url.split('=')[-1]
+        
         item['sold_num'] = response.xpath('//td[text()="本单成交:"]/following::*[1]/text()').extract()[0]
-        item['post_time'] = response.xpath('//td[text()="交易发布时间:"]/following::*[1]/text()').extract()[0]
-        item['area'] = response.xpath('//*[contains(@class,"link_blue")]/text()').extract()[1]
+        post_time = response.xpath('//p[contains(@class, "author")]/text()').extract()[-1].strip()
+        yy = post_time[:4]
+        mm = post_time.split('-')[1][:-1]
+        if len(mm) == 1:
+            mm = '0' + mm
+        dd = post_time.split('-')[-1][:2]
+        tt = post_time.split(':')[0][-2:]
+        ff = post_time.split(':')[1].rstrip()
+        # print(yy+mm+dd+tt+ff+'00')
+        item['post_time'] = yy+mm+dd+tt+ff+'00'
+        item['area'] = response.xpath('//*[contains(@class,"link_blue")]/text()').extract()[1].strip()
         item['username'] = response.xpath('//td[text()="账户名称:"]/following::*[1]/text()').extract()[0]
         item['userid'] = response.xpath('//td[text()="账户编号:"]/following::*[1]/text()').extract()[0]
-        item['reg_time'] = response.xpath('//td[text()="注册时间"]/following::*[1]/text()').extract()[0]
+        reg_time = response.xpath('//dd[contains(@class, "profile-joined")]/text()').extract()[0].strip()
+        yy = reg_time[:4]
+        mm = reg_time.split('-')[1][:-1]
+        if len(mm) == 1:
+            mm = '0' + mm
+        dd = reg_time.split('-')[-1][:2]
+        tt = reg_time.split(':')[0][-2:]
+        ff = reg_time.split(':')[1].rstrip()
+        item['reg_time'] = yy+mm+dd+tt+ff+'00'
         item['title'] = response.xpath('//*[contains(@class,"first")]/a/text()').extract()[0]
         item['price'] = response.xpath('//*[contains(@class,"t_2")]/text()').extract()[-1]
         lines = response.xpath('//div[contains(@class,"content")]/text()').extract()
-        content = ''
-        for line in lines:
-            content += line.strip()
-        item['content'] = content
+        content = ''.join(lines).strip()
+        item['content'] = content.replace('\n', '')
         # item['content'] = response.xpath('//div[contains(@class,"content")]/text()').extract()
         # item['reader'] = topic.xpath('/td[7]/text()')
         print('***********************\r\n')
@@ -104,4 +115,3 @@ class DarkunionSpider(scrapy.Spider):
             print(i + ' ==>> ' + item[i] + '\r\n')
         print('***********************\r\n')
         return item
-

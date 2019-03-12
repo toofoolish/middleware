@@ -51,9 +51,9 @@ class MysqlPipeline():
             item['price'],
             item['content'],
         )
-        sql = "INSERT INTO FORUM(trade_id, sold_num, \
+        sql = "insert into forum(trade_id, sold_num, \
                 post_time, area, username, userid, reg_time, title, price, content) \
-                VALUES (%s, %s,  '%s',  '%s',  '%s', %s, '%s', '%s', %s, '%s')" 
+                values (%s, %s,  '%s',  '%s',  '%s', %s, '%s', '%s', %s, '%s')" 
         try:
             self.cursor.execute(sql % values)
             self.db.commit()
@@ -61,30 +61,6 @@ class MysqlPipeline():
         except:
             self.db.rollback()
             print('Failed to save!')
-
-        # return item
-    # def insert_db(self, item):
-    #     values = (
-    #         item['title'],
-    # id = Field()
-    # trade_id = Field()
-    # sold_num = Field()
-    # post_time = Field()
-    # area = Field()
-    # username = Field()
-    # userid = Field()
-    # reg_time = Field()
-    # title = Field()
-    # price = Field()
-    # content = Field()
-    #         item['url'],
-    #         item['thumb'],
-    #         # item['review_rating'],
-    #         # item['review_num'],
-    #         # item['stock'],
-    #     )
-    #     sql = 'INSERT INTO images VALUES(%s,%s,%s)'
-    #     self.db_cur.execute(sql, values)
 
 class topicpipeline():
     def open_spider(self, spider):
