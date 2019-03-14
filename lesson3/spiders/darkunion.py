@@ -3,7 +3,7 @@ import scrapy
 from scrapy import FormRequest, Request
 import urllib
 from lesson3.items import OnionItem
-import time, random
+import time, random, os
 class DarkunionSpider(scrapy.Spider):
     name = 'darkunion'
     # allowed_domains = ['dark']
@@ -52,7 +52,7 @@ class DarkunionSpider(scrapy.Spider):
         
         base_url = response.url
         for url in index_url:
-            if 'q_ea_id' in url and int(url.split('=')[-1]) < 20000:
+            if 'q_ea_id' in url and int(url.split('=')[-1]) == 10005:
                 aera_url = urllib.parse.urljoin(base_url, url)
                 f.write(aera_url + '\r\n')
                 yield scrapy.Request(aera_url, callback=self.parse_page, headers=self.header)
@@ -61,11 +61,11 @@ class DarkunionSpider(scrapy.Spider):
         base_url = response.url        
         topic_url = response.xpath('//a[text()="打开"]/@href').extract()                
         for url in topic_url:
-            f = open('topic', 'a')
-            time.sleep(round(random.random()*2,1))
-            f.write('*****************************************************\r\n')
-            f.write(urllib.parse.urljoin(base_url, url) + '\r\n')
-            f.close()
+            # f = open('topic', 'a')
+            # time.sleep(round(random.random()*2,1))
+            # f.write('*****************************************************\r\n')
+            # f.write(urllib.parse.urljoin(base_url, url) + '\r\n')
+            # f.close()
             yield scrapy.Request(urllib.parse.urljoin(base_url, url), callback=self.parse_item, headers=self.header)
         
         next_page = response.xpath('//button[contains(@class,"page_b2")]/following::a[1]/@href').extract()
@@ -76,7 +76,17 @@ class DarkunionSpider(scrapy.Spider):
             f.close()
             yield scrapy.Request(next_url, callback=self.parse_page, headers=self.header)               
 
-    def parse_item(self, response):        
+    def parse_item(self, response):
+        print('*********************************')
+        print(response.url)
+        time.sleep(round(random.random()*5,1))
+        self.location = time.strftime("%Y-%m-%d", time.localtime())
+        # self.existorcreate()
+        # cwd = os.getcwd()
+        # filename = response.url.split('=')[1].split('&')[0]
+        # f = open(cwd + os.sep + self.location + os.sep + filename, 'w')
+        # f.write(response.text)
+        # f.close()
         item = OnionItem()
         item['trade_id'] = response.url.split('=')[-1]
         
@@ -108,10 +118,15 @@ class DarkunionSpider(scrapy.Spider):
         lines = response.xpath('//div[contains(@class,"content")]/text()').extract()
         content = ''.join(lines).strip()
         item['content'] = content.replace('\n', '')
-        # item['content'] = response.xpath('//div[contains(@class,"content")]/text()').extract()
-        # item['reader'] = topic.xpath('/td[7]/text()')
-        print('***********************\r\n')
-        for i in item:
-            print(i + ' ==>> ' + item[i] + '\r\n')
-        print('***********************\r\n')
+        # # item['content'] = response.xpath('//div[contains(@class,"content")]/text()').extract()
+        # # item['reader'] = topic.xpath('/td[7]/text()')
+        # print('***********************\r\n')
+        # for i in item:
+        #     print(i + ' ==>> ' + item[i] + '\r\n')
+        # print('***********************\r\n')
         return item
+    def existorcreate(self):
+        if not self.location:
+            self.location = 'temp'
+        if not os.path.exists(self.location):
+            os.mkdir(self.location)           
