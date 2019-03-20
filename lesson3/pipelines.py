@@ -31,7 +31,7 @@ class ImagePipeline(ImagesPipeline):
 
 class MysqlPipeline():
     def open_spider(self, spider):
-        self.db = pymysql.connect("162.211.225.42","test","123qwe","tot" )
+        self.db = pymysql.connect("localhost","test","123qwe","tot" )
         self.cursor = self.db.cursor()
         # self.db_conn = pymysql.connect(self.host, self.user, self.password, self.database, charset='utf-8', port=self.port)
         # self.cursor = self.db.cursor()

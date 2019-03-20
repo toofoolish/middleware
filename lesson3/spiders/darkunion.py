@@ -52,20 +52,21 @@ class DarkunionSpider(scrapy.Spider):
         
         base_url = response.url
         for url in index_url:
-            if 'q_ea_id' in url and int(url.split('=')[-1]) < 20000:
+            if 'q_ea_id' in url and int(url.split('=')[-1]) == 10001:
                 aera_url = urllib.parse.urljoin(base_url, url)
                 f.write(aera_url + '\r\n')
                 yield scrapy.Request(aera_url, callback=self.parse_page, headers=self.header)
         f.close()
+    
     def parse_page(self, response):
         base_url = response.url        
         topic_url = response.xpath('//a[text()="打开"]/@href').extract()                
         for url in topic_url:
-            f = open('topic', 'a')
-            time.sleep(round(random.random()*2,1))
-            f.write('*****************************************************\r\n')
-            f.write(urllib.parse.urljoin(base_url, url) + '\r\n')
-            f.close()
+            # f = open('topic', 'a')
+            # time.sleep(round(random.random()*2,1))
+            # f.write('*****************************************************\r\n')
+            # f.write(urllib.parse.urljoin(base_url, url) + '\r\n')
+            # f.close()
             yield scrapy.Request(urllib.parse.urljoin(base_url, url), callback=self.parse_item, headers=self.header)
         
         # next_page_sel = response.xpath('//button[contains(@class,"page_b2")]')[-1]
@@ -73,8 +74,9 @@ class DarkunionSpider(scrapy.Spider):
         if next_page:
             # f = open('pages', 'a')
             next_url = urllib.parse.urljoin(base_url, next_page[-1])
-            # print('***********************')
-            # print(next_url)
+            print('***********************')
+            print(next_url)
+            print('***********************')
             # f.write(next_url + '\r\n')
             # f.close()
             time.sleep(3 + round(random.random()*5,1))
@@ -124,10 +126,10 @@ class DarkunionSpider(scrapy.Spider):
         item['content'] = content.replace('\n', '')
         # # item['content'] = response.xpath('//div[contains(@class,"content")]/text()').extract()
         # # item['reader'] = topic.xpath('/td[7]/text()')
-        # print('***********************\r\n')
-        # for i in item:
-        #     print(i + ' ==>> ' + item[i] + '\r\n')
-        # print('***********************\r\n')
+        print('***********************\r\n')
+        for i in item:
+            print(i + ' ==>> ' + item[i] + '\r\n')
+        print('***********************\r\n')
         return item
     def existorcreate(self):
         if not self.location:
