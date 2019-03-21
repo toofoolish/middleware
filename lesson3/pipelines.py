@@ -53,7 +53,7 @@ class MysqlPipeline():
         )
         sql = "insert into forum(trade_id, sold_num, \
                 post_time, area, username, userid, reg_time, title, price, content) \
-                values (%s, %s,  '%s',  '%s',  '%s', %s, '%s', '%s', %s, '%s')" 
+                values (%s, %s,  %s,  '%s',  '%s', %s, %s, '%s', %s, '%s')" 
         try:
             self.cursor.execute(sql % values)
             self.db.commit()

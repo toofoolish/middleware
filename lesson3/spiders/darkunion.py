@@ -52,7 +52,7 @@ class DarkunionSpider(scrapy.Spider):
         
         base_url = response.url
         for url in index_url:
-            if 'q_ea_id' in url and int(url.split('=')[-1]) == 10001:
+            if 'q_ea_id' in url and int(url.split('=')[-1]) < 20000:
                 aera_url = urllib.parse.urljoin(base_url, url)
                 f.write(aera_url + '\r\n')
                 yield scrapy.Request(aera_url, callback=self.parse_page, headers=self.header)

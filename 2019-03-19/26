@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="zh-cmn-hans">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>有没有大佬分享几个中文网 - dark web</title>
+
+	<link rel="alternate" type="application/atom+xml" title="Feed - dark web" href="/app.php/feed">			<link rel="alternate" type="application/atom+xml" title="Feed - 新主题" href="/app.php/feed/topics">		<link rel="alternate" type="application/atom+xml" title="Feed - 版面 - dark" href="/app.php/feed/forum/5">	<link rel="alternate" type="application/atom+xml" title="Feed - 主题 - 有没有大佬分享几个中文网" href="/app.php/feed/topic/26">	
+	<link rel="canonical" href="http://22u75kqyl666joi2.onion/viewtopic.php?t=26">
+
+<!--
+	phpBB style name: prosilver
+	Based on style:   prosilver (this is the default phpBB3 style)
+	Original author:  Tom Beddard ( http://www.subBlue.com/ )
+	Modified by:
+-->
+
+<link href="./assets/css/font-awesome.min.css?assets_version=3" rel="stylesheet">
+<link href="./styles/prosilver/theme/stylesheet.css?assets_version=3" rel="stylesheet">
+<link href="./styles/prosilver/theme/zh_cmn_hans/stylesheet.css?assets_version=3" rel="stylesheet">
+
+
+
+
+<!--[if lte IE 9]>
+	<link href="./styles/prosilver/theme/tweaks.css?assets_version=3" rel="stylesheet">
+<![endif]-->
+
+
+
+
+
+</head>
+<body id="phpbb" class="nojs notouch section-viewtopic ltr ">
+
+
+<div id="wrap" class="wrap">
+	<a id="top" class="top-anchor" accesskey="t"></a>
+	<div id="page-header">
+		<div class="headerbar" role="banner">
+					<div class="inner">
+
+			<div id="site-description" class="site-description">
+				<a id="logo" class="logo" href="./index.php" title="论坛首页"><span class="site_logo"></span></a>
+				<h1>dark web</h1>
+				<p>web in the dark</p>
+				<p class="skiplink"><a href="#start_here">跳到内容</a></p>
+			</div>
+
+									<div id="search-box" class="search-box search-header" role="search">
+				<form action="./search.php" method="get" id="search">
+				<fieldset>
+					<input name="keywords" id="keywords" type="search" maxlength="128" title="按关键词搜索" class="inputbox search tiny" size="20" value="" placeholder="搜索……" />
+					<button class="button button-search" type="submit" title="搜索">
+						<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">搜索</span>
+					</button>
+					<a href="./search.php" class="button button-search-end" title="高级搜索">
+						<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">高级搜索</span>
+					</a>
+					
+				</fieldset>
+				</form>
+			</div>
+						
+			</div>
+					</div>
+				<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-main" class="nav-main linklist" role="menubar">
+
+		<li id="quick-links" class="quick-links dropdown-container responsive-menu" data-skip-responsive="true">
+			<a href="#" class="dropdown-trigger">
+				<i class="icon fa-bars fa-fw" aria-hidden="true"></i><span>快捷链接</span>
+			</a>
+			<div class="dropdown">
+				<div class="pointer"><div class="pointer-inner"></div></div>
+				<ul class="dropdown-contents" role="menu">
+					
+											<li class="separator"></li>
+													<li>
+								<a href="./search.php?search_id=egosearch" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>查看您的帖子</span>
+								</a>
+							</li>
+																			<li>
+								<a href="./search.php?search_id=newposts" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-red" aria-hidden="true"></i><span>查看新帖</span>
+								</a>
+							</li>
+																			<li>
+								<a href="./search.php?search_id=unreadposts" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-red" aria-hidden="true"></i><span>查看未读文章</span>
+								</a>
+							</li>
+													<li>
+								<a href="./search.php?search_id=unanswered" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-gray" aria-hidden="true"></i><span>查看没有回复的主题</span>
+								</a>
+							</li>
+							<li>
+								<a href="./search.php?search_id=active_topics" role="menuitem">
+									<i class="icon fa-file-o fa-fw icon-blue" aria-hidden="true"></i><span>查看活跃的主题</span>
+								</a>
+							</li>
+							<li class="separator"></li>
+							<li>
+								<a href="./search.php" role="menuitem">
+									<i class="icon fa-search fa-fw" aria-hidden="true"></i><span>搜索</span>
+								</a>
+							</li>
+					
+											<li class="separator"></li>
+													<li>
+								<a href="./memberlist.php" role="menuitem">
+									<i class="icon fa-group fa-fw" aria-hidden="true"></i><span>用户列表</span>
+								</a>
+							</li>
+																			<li>
+								<a href="./memberlist.php?mode=team" role="menuitem">
+									<i class="icon fa-shield fa-fw" aria-hidden="true"></i><span>管理团队</span>
+								</a>
+							</li>
+																<li class="separator"></li>
+
+									</ul>
+			</div>
+		</li>
+
+				<li data-last-responsive="true">
+			<a href="/app.php/help/faq" rel="help" title="常见问题" role="menuitem">
+				<i class="icon fa-question-circle fa-fw" aria-hidden="true"></i><span>FAQ</span>
+			</a>
+		</li>
+						
+					<li id="username_logged_in" class="rightside " data-skip-responsive="true">
+						<div class="header-profile dropdown-container">
+				<a href="./ucp.php" class="header-avatar dropdown-trigger"> <span class="username">alfabeta</span></a>
+				<div class="dropdown">
+					<div class="pointer"><div class="pointer-inner"></div></div>
+					<ul class="dropdown-contents" role="menu">
+						
+					
+						<li>
+							<a href="./ucp.php" title="用户控制面板" role="menuitem">
+								<i class="icon fa-sliders fa-fw" aria-hidden="true"></i><span>用户控制面板</span>
+							</a>
+						</li>
+						<li>
+							<a href="./memberlist.php?mode=viewprofile&amp;u=10563" title="用户资料" role="menuitem">
+								<i class="icon fa-user fa-fw" aria-hidden="true"></i><span>用户资料</span>
+							</a>
+						</li>
+
+						
+						<li class="separator"></li>
+						<li>
+							<a href="./ucp.php?mode=logout&amp;sid=4dccf9649ee121c3de385d4dfef9712e" title="退出" accesskey="x" role="menuitem">
+								<i class="icon fa-power-off fa-fw" aria-hidden="true"></i><span>退出</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+					</li>
+					<li class="rightside" data-skip-responsive="true">
+				<a href="./ucp.php?i=pm&amp;folder=inbox" role="menuitem">
+					<i class="icon fa-inbox fa-fw" aria-hidden="true"></i><span>私信 </span><strong class="badge hidden">0</strong>
+				</a>
+			</li>
+							<li class="dropdown-container dropdown-right rightside" data-skip-responsive="true">
+				<a href="./ucp.php?i=ucp_notifications" id="notification_list_button" class="dropdown-trigger">
+					<i class="icon fa-bell fa-fw" aria-hidden="true"></i><span>通知 </span><strong class="badge hidden">0</strong>
+				</a>
+				<div id="notification_list" class="dropdown dropdown-extended notification_list">
+	<div class="pointer"><div class="pointer-inner"></div></div>
+	<div class="dropdown-contents">
+		<div class="header">
+			通知
+			<span class="header_settings">
+				<a href="./ucp.php?i=ucp_notifications&amp;mode=notification_options">设置</a>
+							</span>
+		</div>
+
+		<ul>
+							<li class="no_notifications">
+					您没有通知
+				</li>
+								</ul>
+
+		<div class="footer">
+			<a href="./ucp.php?i=ucp_notifications"><span>查看全部</span></a>
+		</div>
+	</div>
+</div>
+			</li>
+						</ul>
+
+	<ul id="nav-breadcrumbs" class="nav-breadcrumbs linklist navlinks" role="menubar">
+						<li class="breadcrumbs">
+										<span class="crumb"  itemtype="http://data-vocabulary.org/Breadcrumb" itemscope=""><a href="./index.php" itemprop="url" accesskey="h" data-navbar-reference="index"><i class="icon fa-home fa-fw"></i><span itemprop="title">论坛首页</span></a></span>
+
+											<span class="crumb"  itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="4"><a href="./viewforum.php?f=4" itemprop="url"><span itemprop="title">dark分区</span></a></span>
+															<span class="crumb"  itemtype="http://data-vocabulary.org/Breadcrumb" itemscope="" data-forum-id="5"><a href="./viewforum.php?f=5" itemprop="url"><span itemprop="title">dark</span></a></span>
+												</li>
+		
+					<li class="rightside responsive-search">
+				<a href="./search.php" title="查看高级搜索选项" role="menuitem">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">搜索</span>
+				</a>
+			</li>
+			</ul>
+
+	</div>
+</div>
+	</div>
+
+	
+	<a id="start_here" class="anchor"></a>
+	<div id="page-body" class="page-body" role="main">
+		
+		
+<h2 class="topic-title"><a href="./viewtopic.php?f=5&amp;t=26">有没有大佬分享几个中文网</a></h2>
+<!-- NOTE: remove the style="display: none" when you want to have the forum description on the topic body -->
+
+
+
+<div class="action-bar bar-top">
+	
+	
+			<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="主题工具" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+													<li>
+						<a href="./viewtopic.php?uid=10563&amp;f=5&amp;t=26&amp;watch=topic&amp;start=0&amp;hash=cf133f76" class="watch-topic-link" title="订阅主题" data-ajax="toggle_link" data-toggle-class="icon fa-square-o fa-fw" data-toggle-text="退订主题" data-toggle-url="./viewtopic.php?uid=10563&amp;f=5&amp;t=26&amp;unwatch=topic&amp;start=0&amp;hash=cf133f76" data-update-all=".watch-topic-link">
+							<i class="icon fa-check-square-o fa-fw" aria-hidden="true"></i><span>订阅主题</span>
+						</a>
+					</li>
+													<li>
+						<a href="./viewtopic.php?f=5&amp;t=26&amp;bookmark=1&amp;hash=cf133f76" class="bookmark-link" title="收藏主题" data-ajax="alt_text" data-alt-text="取消收藏" data-update-all=".bookmark-link">
+							<i class="icon fa-bookmark-o fa-fw" aria-hidden="true"></i><span>收藏主题</span>
+						</a>
+					</li>
+																				<li>
+					<a href="./viewtopic.php?f=5&amp;t=26&amp;view=print" title="打印预览" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>打印预览</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+	
+			<div class="search-box" role="search">
+			<form method="get" id="topic-search" action="./search.php">
+			<fieldset>
+				<input class="inputbox search tiny"  type="search" name="keywords" id="search_keywords" size="20" placeholder="查找这个主题……" />
+				<button class="button button-search" type="submit" title="搜索">
+					<i class="icon fa-search fa-fw" aria-hidden="true"></i><span class="sr-only">搜索</span>
+				</button>
+				<a href="./search.php" class="button button-search-end" title="高级搜索">
+					<i class="icon fa-cog fa-fw" aria-hidden="true"></i><span class="sr-only">高级搜索</span>
+				</a>
+				<input type="hidden" name="t" value="26" />
+<input type="hidden" name="sf" value="msgonly" />
+
+			</fieldset>
+			</form>
+		</div>
+	
+			<div class="pagination">
+			8 帖子
+							&bull; 分页： <strong>1</strong> / <strong>1</strong>
+					</div>
+		</div>
+
+
+
+
+			<div id="p50" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile50">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=663" class="username">hgsqjl</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>帖子：</strong> <a href="./search.php?author_id=663&amp;sr=posts">1</a></dd>		<dd class="profile-joined"><strong>注册时间：</strong> 周一 9月 10, 2018 11:54 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content50">
+
+						<h3 class="first"><a href="#p50">有没有大佬分享几个中文网</a></h3>
+
+													
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=50#p50" title="帖子">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">帖子</span>
+					</a>
+								<span class="responsive-hide">由 <strong><a href="./memberlist.php?mode=viewprofile&amp;u=663" class="username">hgsqjl</a></strong> &raquo; </span>周六 9月 15, 2018 1:28 pm
+			</p>
+			
+			
+			
+			<div class="content">顺便求loli论坛</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="页首">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">页首</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p60" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile60">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1034" class="username">feng</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>帖子：</strong> <a href="./search.php?author_id=1034&amp;sr=posts">4</a></dd>		<dd class="profile-joined"><strong>注册时间：</strong> 周日 9月 16, 2018 5:41 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content60">
+
+						<h3 ><a href="#p60">Re: 有没有大佬分享几个中文网</a></h3>
+
+													
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=60#p60" title="帖子">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">帖子</span>
+					</a>
+								<span class="responsive-hide">由 <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1034" class="username">feng</a></strong> &raquo; </span>周日 9月 16, 2018 5:44 pm
+			</p>
+			
+			
+			
+			<div class="content">同求，我QQ和邮箱：1801205787</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="页首">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">页首</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p99" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile99">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1290" class="username">wujun81885</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>帖子：</strong> <a href="./search.php?author_id=1290&amp;sr=posts">1</a></dd>		<dd class="profile-joined"><strong>注册时间：</strong> 周三 9月 19, 2018 9:40 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content99">
+
+						<h3 ><a href="#p99">Re: 有没有大佬分享几个中文网</a></h3>
+
+													
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=99#p99" title="帖子">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">帖子</span>
+					</a>
+								<span class="responsive-hide">由 <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1290" class="username">wujun81885</a></strong> &raquo; </span>周三 9月 19, 2018 6:19 pm
+			</p>
+			
+			
+			
+			<div class="content">同求     QQ    7404039</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="页首">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">页首</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p100" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile100">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1357" class="username">yesido</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>帖子：</strong> <a href="./search.php?author_id=1357&amp;sr=posts">1</a></dd>		<dd class="profile-joined"><strong>注册时间：</strong> 周三 9月 19, 2018 9:56 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content100">
+
+						<h3 ><a href="#p100">Re: 有没有大佬分享几个中文网</a></h3>
+
+													
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=100#p100" title="帖子">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">帖子</span>
+					</a>
+								<span class="responsive-hide">由 <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1357" class="username">yesido</a></strong> &raquo; </span>周三 9月 19, 2018 9:58 pm
+			</p>
+			
+			
+			
+			<div class="content">同求  邮箱:<a href="mailto:99599669@qq.com">99599669@qq.com</a></div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="页首">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">页首</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p164" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile164">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1874" class="username">olddog</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>帖子：</strong> <a href="./search.php?author_id=1874&amp;sr=posts">17</a></dd>		<dd class="profile-joined"><strong>注册时间：</strong> 周一 9月 24, 2018 12:10 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content164">
+
+						<h3 ><a href="#p164">Re: 有没有大佬分享几个中文网</a></h3>
+
+													
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=164#p164" title="帖子">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">帖子</span>
+					</a>
+								<span class="responsive-hide">由 <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1874" class="username">olddog</a></strong> &raquo; </span>周一 9月 24, 2018 1:07 am
+			</p>
+			
+			
+			
+			<div class="content">自己挨个试8<br>
+百度一哈都不会了吗？<br>
+当年我们没有带佬带，还不是过来了？<br>
+那时候挖到什么就分享一哈，哪里是现在你们这些臭鱼烂虾？<br>
+妈卖批了还留邮箱，又不是求黄片种子，你留你妈的邮箱呢？<br>
+正文：先说好，大部分应该挂了。<br>
+========================================================================<br>
+<br>
+<br>
+1、Hidden wiki上面不要买东西，多数都是骗人的。<br>
+2、中文的网站也是有的。<br>
+如：22u75kqyl666joi2.onion/ 深网中文第一页<br>
+deepchinae4bhfft.onion/ DeepChina<br>
+b4d3igwmoo5355ur.onion/ 匿名聊天室<br>
+3cvpkfx4gdnkcduj.onion/ 皮皮书<br>
+xkow4dnkw7cusncz.onion/ 暗网中文论坛。<br>
+mbu3bn7fhieigtcb.onion/ onion交流区<br>
+不过这些中文网站没有什么人气，没意思。<br>
+可以去暗网的淘宝 k5zq47j6wd3wdvjq.onion 去逛逛，说不准有你喜欢的。<br>
+匿名 2014-11-27<br>
+严格来说，应该是不要在Hidden Wiki的主站上面买东西。<br>
+若想分辨Hidden Wiki上服务商的信誉，可前往The Hidden Wiki的一个镜像站点：<br>
+deepwikizpkrt67e.onion/(Down)<br>
+有哪些值得一看的 .onion 深网Deep Web站点<br>
+，这个镜像站会将大部分服务商分成三种：VERIFIED、CAUTION、SCAM<br>
+VERIFIED即经证实过的有信誉的服务商<br>
+CAUTION即有买家被骗的报告<br>
+SCAM即经证实此服务商为无信誉的服务商<br>
+<br>
+仅为普及知识，请勿用于非法用途，本人不对看客的一切后续行为负任何责任。<br>
+王延斌 2015-08-09<br>
+o browse .onion Deep Web links, install Tor Browser from torproject.org/Hidden Service lists and search engines<br>
+<a href="http://3g2upl4pq6kufc4m.onion/" class="postlink">http://3g2upl4pq6kufc4m.onion/</a> – DuckDuckGo Search Engine<br>
+xmh57jrzrnw6insl.onion/ – TORCH – Tor Search Engine<br>
+zqktlwi4fecvo6ri.onion/ – Uncensored Hidden Wiki<br>
+32rfckwuorlf4dlv.onion/ – Onion URL Repository<br>
+e266al32vpuorbyg.onion/ – Dark Nexus<br>
+5plvrsgydwy2sgce.onion/ – Seeks Search<br>
+2vlqpcqpjlhmd5r2.onion/ – Gateway to Freenet<br>
+nlmymchrmnlmbnii.onion/ – Is It Up?<br>
+kpynyvym6xqi7wz2.onion/ – ParaZite<br>
+wiki5kauuihowqi5.onion/ – Onion Wiki<br>
+torwikignoueupfm.onion/ – Tor Wiki<br>
+<a href="http://kpvz7ki2v5agwt35.onion" class="postlink">http://kpvz7ki2v5agwt35.onion</a> – The Hidden Wiki<br>
+idnxcnkne4qt76tg.onion/ – Tor Project: Anonymity Online<br>
+torlinkbgs6aabns.onion/ – TorLinks<br>
+jh32yv5zgayyyts3.onion/ – Hidden Wiki .Onion Urls<br>
+wikitjerrta4qgz4.onion/ – Hidden Wiki – Tor Wiki<br>
+xdagknwjc7aaytzh.onion/ – Anonet Webproxy<br>
+3fyb44wdhnd2ghhl.onion/ – All You’re Wiki – clone of the clean hidden wiki that went down with freedom hosting<br>
+3fyb44wdhnd2ghhl.onion/ – All You’re Base<br>
+j6im4v42ur6dpic3.onion/ – TorProject Archive<br>
+p3igkncehackjtib.onion/ – TorProject Media<br>
+<a href="http://kbhpodhnfxl3clb4.onion" class="postlink">http://kbhpodhnfxl3clb4.onion</a> – Tor Search<br>
+cipollatnumrrahd.onion/ – Cipolla 2.0 (Italian)<br>
+dppmfxaacucguzpc.onion/ – TorDir – One of the oldest link lists on Tor<br>
+Marketplace Financial<br>
+torbrokerge7zxgq.onion/ – TorBroker – Trade securities anonymously with bitcoin, currently supports nearly 1000 stocks and ETFs<br>
+fogcore5n3ov3tui.onion/ – Bitcoin Fog – Bitcoin Laundry<br>
+2vx63nyktk4kxbxb.onion/ – AUTOMATED PAYPAL AND CREDIT CARD STORE<br>
+<a href="http://samsgdtwz6hvjyu4.onion" class="postlink">http://samsgdtwz6hvjyu4.onion</a> – Safe, Anonymous, Fast, Easy escrow service.<br>
+easycoinsayj7p5l.onion/ – EasyCoin – Bitcoin Wallet with free Bitcoin Mixer<br>
+jzn5w5pac26sqef4.onion/ – WeBuyBitcoins – Sell your Bitcoins for Cash (USD), ACH, WU/MG, LR, PayPal and more<br>
+ow24et3tetp6tvmk.onion/ – OnionWallet – Anonymous Bitcoin Wallet and Bitcoin Laundry<br>
+qc7ilonwpv77qibm.onion/ – Western Union Exploit<br>
+3dbr5t4pygahedms.onion/ – ccPal Store<br>
+y3fpieiezy2sin4a.onion/ – HQER – High Quality Euro Replicas<br>
+qkj4drtgvpm7eecl.onion/ – Counterfeit USD<br>
+nr6juudpp4as4gjg.onion/ – PayPal to BitCoins<br>
+nr6juudpp4as4gjg.onion/ – Double Your BitCoins<br>
+lw4ipk5choakk5ze.onion/ – High Quality Tutorials<br>
+Marketplace Commercial Services<br>
+6w6vcynl6dumn67c.onion/ – Tor Market Board – Anonymous Marketplace Forums<br>
+wvk32thojln4gpp4.onion/ – Project Evil<br>
+5mvm7cg6bgklfjtp.onion/ – Discounted electronics goods<br>
+lw4ipk5choakk5ze.onion/ – Unfriendlysolution – Legit hitman service<br>
+nr6juudpp4as4gjg.onion/ – Tor Girls<br>
+tuu66yxvrnn3of7l.onion/ – UK Guns and Ammo<br>
+nr6juudpp4as4gjg.onion/ – Used Tor Guns<br>
+ucx7bkbi2dtia36r.onion/ – Amazon Business<br>
+nr6juudpp4as4gjg.onion/ – Tor Technology<br>
+hbetshipq5yhhrsd.onion/ – Hidden BetCoin<br>
+cstoreav7i44h2lr.onion/ – CStore Carded Store<br>
+tfwdi3izigxllure.onion/ – Apples 4 Bitcoin<br>
+e2qizoerj4d6ldif.onion/ – Carded Store<br>
+jvrnuue4bvbftiby.onion/ – Data-Bay<br>
+bgkitnugq5ef2cpi.onion/ – Hackintosh<br>
+vlp4uw5ui22ljlg7.onion/ – EuroArms<br>
+b4vqxw2j36wf2bqa.onion/ – Advantage Products<br>
+ybp4oezfhk24hxmb.onion/ – Hitman Network<br>
+mts7hqqqeogujc5e.onion/ – Marianic Technology Services<br>
+mobil7rab6nuf7vx.onion/ – Mobile Store<br>
+54flq67kqr5wvjqf.onion/ – MSR Shop<br>
+yth5q7zdmqlycbcz.onion/ – Old Man Fixer’s Fixing Services<br>
+matrixtxri745dfw.onion/ – PC Shop<br>
+storegsq3o5mfxiz.onion/ – Samsung StorE<br>
+sheep5u64fi457aw.onion/ – Sheep Marketplace<br>
+nr6juudpp4as4gjg.onion/ – Tor BetCoin<br>
+qizriixqwmeq4p5b.onion/ – Tor Web Developer<br>
+vfqnd6mieccqyiit.onion/ – UK Passports<br>
+en35tuzqmn4lofbk.onion/ – US Fake ID Store<br>
+xfnwyig7olypdq5r.onion/ – USA Citizenship<br>
+uybu3melulmoljnd.onion/ – iLike Help Guy<br>
+dbmv53j45pcv534x.onion/ – Network Consulting and Software Development<br>
+lw4ipk5choakk5ze.onion/ – Quick Solution (Hitman)<br>
+nr6juudpp4as4gjg.onion/ – Tyner MSR Store<br>
+Marketplace Drugs<br>
+rso4hutlefirefqp.onion/ – EuCanna – Medical Grade Cannabis Buds, Rick Simpson Oil, Ointments and Creams<br>
+newpdsuslmzqazvr.onion/ – Peoples Drug Store – The Darkweb’s Best Online Drug Supplier!<br>
+smoker32pk4qt3mx.onion/ – Smokeables – Finest Organic Cannabis shipped from the USA<br>
+fzqnrlcvhkgbdwx5.onion/ – CannabisUK – UK Wholesale Cannabis Supplier<br>
+kbvbh4kdddiha2ht.onion/ – DeDope – German Weed and Hash shop. (Bitcoin)<br>
+s5q54hfww56ov2xc.onion/ – BitPharma – EU vendor for cocaine, speed, mdma, psychedelics and subscriptions<br>
+ll6lardicrvrljvq.onion/ – Brainmagic – Best psychedelics on the darknet<br>
+25ffhnaechrbzwf3.onion/ – NLGrowers – Coffee Shop grade Cannabis from the netherlands<br>
+fec33nz6mhzd54zj.onion/ – Black Market Reloaded Forums<br>
+atlmlxbk2mbupwgr.onion/ – Atlantis Marketplace Forums<br>
+atlantisrky4es5q.onion/ – Atlantis Marketplace<br>
+dkn255hz262ypmii.onion/ – Silk Road Forums<br>
+4yjes6zfucnh7vcj.onion/ – Drug Market<br>
+k4btcoezc5tlxyaf.onion/ – Kamagra for BitCoins<br>
+<a href="http://silkroadvb5piz3r.onion/silkroad/home" class="postlink">http://silkroadvb5piz3r.onion/silkroad/home</a> – Silk Road Marketplace<br>
+5onwnspjvuk7cwvk.onion/ – Black Market Reloaded<br>
+Hosting<br>
+matrixtxri745dfw.onion/ – Image Uploader<br>
+lw4ipk5choakk5ze.onion/ – PasteThis – Tor based Pastebin<br>
+wzrtr6gpencksu3d.onion:8080 – Gittor<br>
+nr6juudpp4as4gjg.onion/ – Free hosting<br>
+tklxxs3rdzdjppnl.onion/ – Liberty’s Hackers Hosting Service<br>
+matrixtxri745dfw.onion/ – Matrix Trilogy<br>
+Blogs<br>
+74ypjqjwf6oejmax.onion/ – Beneath VT – Exploring Virginia Tech’s Steam Tunnels and Beyond<br>
+76qugh5bey5gum7l.onion/ – Deep Web Radio<br>
+edramalpl7oq5npk.onion/ – Encyclopedia Dramatica<br>
+ih4pgsz3aepacbwl.onion/ – Hushbox<br>
+ad52wtwp2goynr3a.onion/ – Dark Like My Soul<br>
+tns7i5gucaaussz4.onion/ – FreeFor<br>
+gdkez5whqhpthb4d.onion/ – Scientology Archive<br>
+newsiiwanaduqpre.onion/ – All the latest news for tor<br>
+5vppavyzjkfs45r4.onion/ – Michael Blizek<br>
+7ueo7ahq2xlpwx7q.onion/ – AYPSELA News<br>
+7hk64iz2vn2ewi7h.onion/ – Blog about Stories<br>
+tigas3l7uusztiqu.onion/ – Mike Tigas<br>
+mpf3i4k43xc2usxj.onion/ – Sam Whited<br>
+7w2rtz7rgfwj5zuv.onion/ – An Open Letter to Revolutionaries<br>
+3c3bdbvhb7j6yab2.onion/ – Totse 2<br>
+4fvfamdpoulu2nms.onion/ – Lucky Eddie’s Home<br>
+nwycvryrozllb42g.onion/ – Fravia’s Web Searching Lore<br>
+newsiiwanaduqpre.onion/ – OnionNews – Blog about the onionland<br>
+Forums and Chans<br>
+2gxxzwnj52jutais.onion/ – Onion Forum 2.0 renewed<br>
+<a href="http://3fyb44wdhnd2ghhl.onion/ib/" class="postlink">http://3fyb44wdhnd2ghhl.onion/ib/</a> – Onii-Chan<br>
+<a href="http://bx7zrcsebkma7ids.onion" class="postlink">http://bx7zrcsebkma7ids.onion</a> – Jisko<br>
+npdaaf3s3f2xrmlo.onion/ – Twitter clone<br>
+<a href="http://jv7aqstbyhd5hqki.onion" class="postlink">http://jv7aqstbyhd5hqki.onion</a> – HackBB – Hacking &amp; cracking forum<br>
+xdagknwjc7aaytzh.onion/ – Read only access to the Freenet FMS forums via the Anonet Webproxy<br>
+sbforumaz7v3v6my.onion/ – SciBay Forums<br>
+kpmp444tubeirwan.onion/ – DeepWeb<br>
+r5c2ch4h5rogigqi.onion/ – StaTorsNet<br>
+<a href="http://hbjw7wjeoltskhol.onion" class="postlink">http://hbjw7wjeoltskhol.onion</a> – The BEST tor social network! File sharing, messaging and much more. Use a fake email to register.<br>
+t4is3dhdc2jd4yhw.onion/ – OnionForum 3.0 – New Onionforum for general talk, now with marketplace<br>
+<a href="http://zw3crggtadila2sg.onion/imageboard/" class="postlink">http://zw3crggtadila2sg.onion/imageboard/</a> – TorChan – One of the oldest chans on Tor<br>
+Email and Messaging<br>
+<a href="http://bitmailendavkbec.onion" class="postlink">http://bitmailendavkbec.onion</a> – swiss email<br>
+365u4txyqfy72nul.onion/ – Anonymous E-mail sevice. You can only communicate with other users currently using this service. So tell all your friends about it!<br>
+sms4tor3vcr2geip.onion/ – SMS4TOR – Self destructing messages<br>
+notestjxctkwbk6z.onion/ – NoteBin – Create encrypted self-destructing notes<br>
+torbox3uiot6wchz.onion/ – [TorBox] The Tor Mail Box<br>
+u6lyst27lmelm6oy.onion/ – Blue matrix chat NOT UP ALL THE TIME so chek often to see when it is<br>
+wi7qkxyrdpu5cmvr.onion/ – Autistici/Inventati<br>
+u4uoz3aphqbdc754.onion/ – Hell Online<br>
+Political<br>
+6sgjmi53igmg7fm7.onion/ – Bugged Planet<br>
+faerieuaahqvzgby.onion/ – Fairie Underground<br>
+2r2tz6wzqh7gaji7.onion/ – Kavkaz Center<br>
+tnysbtbxsf356hiy.onion/ – The New Yorker Strongbox<br>
+duskgytldkxiuqc6.onion/ – Example rendezvous points page<br>
+rrcc5uuudhh4oz3c.onion/ – The Intel Exchange Forum :: Information and discussion on various topics, ranging from Illegal Activities and Alternative Energy, to Conspiracy Theories and Hacking. Same people from SnapBBS on a fully secure, moderated and categorized forum.<br>
+opnju4nyz7wbypme.onion/ – A7B blog :: a blog dedicated to the restoration of a limited constitutional republic in the USA<br>
+assmkedzgorodn7o.onion/ – Anonymous, safe, secure, crowdfunded assassinations.<br>
+duskgytldkxiuqc6.onion/ – Commo Sense by Thomas Paine<br>
+nwycvryrozllb42g.onion/ – Destination Unknown<br>
+<a href="http://zbnnr7qzaxlk5tms.onion/" class="postlink">http://zbnnr7qzaxlk5tms.onion/</a> – Wiki Leaks<br>
+Hacking<br>
+salted7fpnlaguiq.onion/ – SALT<br>
+yj5rbziqttulgidy.onion/ – Itanimulli<br>
+bbxdfsru7lmmbj32.onion/ – Delta Initiative<br>
+2ogmrlfzdthnwkez.onion/ – Rent-A-Hacker<br>
+Warez<br>
+2gxxzwnj52jutais.onion/ – The Nowhere Server (restored from backup after FH)<br>
+jntlesnev5o7zysa.onion/ – The Pirate Bay – Torrents<br>
+am4wuhz3zifexz5u.onion/ – Tor Library – library of books and other media files<br>
+uj3wazyk5u4hnvtk.onion/ – The Pirate Bay – Torrents (official .onion)<br>
+doxbindtelxceher.onion/ – DOXBIN<br>
+wuvdsbmbwyjzsgei.onion/ – Music Downloads<br>
+lolicore75rq3tm5.onion/ – Lolicore and Speedcore Music<br>
+xfmro77i3lixucja.onion/ – ebooks<br>
+vt27twhtksyvjrky.onion/ – lol 20th Century Western Music Recordings and Scores<br>
+2ygbaoezjdmacnro.onion/ – Pony at Noisebridge<br>
+xfmro77i3lixucja.onion/ – Imperial Library of Trantor<br>
+c3jemx2ube5v5zpg.onion/ – Jotunbane’s Reading Club<br>
+Drugs Non-commercial<br>
+No links found.<br>
+<br>
+<br>
+Erotic 18+<br>
+tklxxs3rdzdjppnl.onion/ – SharePass – Password sharing community<br>
+k4jmdeccpnsfe43c.onion/ – Girls Released – Some nice model pics<br>
+54dgeda4ik6iypui.onion/ – Gallery – Met-Art, FTVX etc sets<br>
+pinkmethuylnenlz.onion/ – The Pink Meth (mirror)<br>
+2fqgjzbb2h7yevom.onion/ – Klixen<br>
+orsxvca7glswueo7.onion/ – EroDir – Lots and lots of Hentai<br>
+mmgh3rqeswrlgzdr.onion/ – VOR-COM<br>
+Erotic Hard Candy<br>
+lovezspamopfiqul.onion/ – TLZ discussion board<br>
+tqjhyhbso4mdcrvh.onion/ – Sciclay Cams<br>
+<a href="http://iqlnc7cbykhhurfo.onion/" class="postlink">http://iqlnc7cbykhhurfo.onion/</a> – LLL – Image and Video down- &amp; upload<br>
+oglbv4c4kpoobkid.onion/ – Onion Girl Love Board – Private Board<br>
+bvunqhdbizqxyuoe.onion/ – Boy Vids 4.0<br>
+girlbmayme6evpwv.onion/ – Girls and Boys<br>
+op4jvhn65pjv3slt.onion/ – PedoEmpire<br>
+7haz75ietrhjds3j.onion/ – All Natural Spanking<br>
+spofoh4ucwlc7zr6.onion/ – Safe Port Forum<br>
+tqjhyhbso4mdcrvh.onion/ – BL Forum<br>
+ftwwebt6e3nb3lmw.onion/ – FTW Image Boards<br>
+tlz3gig7k46s4r66.onion/ – TLZ private forums<br>
+vkq6wz4ozmldscii.onion/ – Topic Links – A CP sites link list<br>
+Erotic Jailbait<br>
+66m4z7ygkqghb4tc.onion/ – Some paradisebirds casey videos<br>
+Non-English<br>
+<a href="http://germanyhusicaysx.onion" class="postlink">http://germanyhusicaysx.onion</a> – Deutschland im Deep Web – German forum<br>
+ffi5v46ttwgx3fby.onion/ – Das ist Deutschland hier 2.0 – German Board<br>
+paisleli66axejos.onion/ – PAIS<br>
+hyjmkmb3lfymiprp.onion/ – Dziecięca pedofilia<br>
+runionv62ul3roit.onion/ – Russian Onion Union<br>
+s6cco2jylmxqcdeh.onion/ – ?ltimos bumps<br>
+<a href="http://5xki35vc4g5ts6gc.onion" class="postlink">http://5xki35vc4g5ts6gc.onion</a> – GTF Greek Tor Forum . For greek speaking users<br>
+cipollatnumrrahd.onion/ – Cipolla 2.0 – Italian Community<br>
+<a href="http://runionv62ul3roit.onion" class="postlink">http://runionv62ul3roit.onion</a> – Russian community: market and anonymous talks about security, guns etc.<br>
+ptrackcp2noqu5fh.onion/ – PoliceTrack – Ne vous faites plus suivre par la police.<br>
+<a href="http://amberoadychffmyw.onion" class="postlink">http://amberoadychffmyw.onion</a> – Amberoad – russian anonymous market<br>
+<a href="http://r2d2akbw3jpt4zbf.onion" class="postlink">http://r2d2akbw3jpt4zbf.onion</a> – R2D2 – russian anonymous market<br>
+<a href="http://ramp2bombkadwvgz.onion" class="postlink">http://ramp2bombkadwvgz.onion</a> – RAMP – biggest russian market (drugs only)<br>
+szmyt4v4vjbnxpg3.onion/ – Славянский<br>
+o2tu5zjxjlibrary.onion/ – Bibliotheca Alexandrina<br>
+xzzpowtjlobho6kd.onion/ – DeepBlog<br>
+zqiirytam276uogb.onion/ – Thorlauta<br>
+<a href="http://ocbh4hoqs37unvv6.onion" class="postlink">http://ocbh4hoqs37unvv6.onion</a> – French Deep Web</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="页首">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">页首</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p165" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile165">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1874" class="username">olddog</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>帖子：</strong> <a href="./search.php?author_id=1874&amp;sr=posts">17</a></dd>		<dd class="profile-joined"><strong>注册时间：</strong> 周一 9月 24, 2018 12:10 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content165">
+
+						<h3 ><a href="#p165">Re: 有没有大佬分享几个中文网</a></h3>
+
+													
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=165#p165" title="帖子">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">帖子</span>
+					</a>
+								<span class="responsive-hide">由 <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1874" class="username">olddog</a></strong> &raquo; </span>周一 9月 24, 2018 1:11 am
+			</p>
+			
+			
+			
+			<div class="content">还有留qq的憨憨，现在都这么野了么，当年我们留个onion邮箱都得犹豫半天，这不是你们自己的qq8，你们是跟这些qq的user有仇么？</div>
+
+			
+													<div class="notice">
+					上次由 <a href="./memberlist.php?mode=viewprofile&amp;u=1874" class="username">olddog</a> 在 周一 9月 24, 2018 1:14 am，总共编辑 1 次。
+									</div>
+			
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="页首">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">页首</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p166" class="post has-profile bg2">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile166">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=1874" class="username">olddog</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>帖子：</strong> <a href="./search.php?author_id=1874&amp;sr=posts">17</a></dd>		<dd class="profile-joined"><strong>注册时间：</strong> 周一 9月 24, 2018 12:10 am</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content166">
+
+						<h3 ><a href="#p166">Re: 有没有大佬分享几个中文网</a></h3>
+
+													
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=166#p166" title="帖子">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">帖子</span>
+					</a>
+								<span class="responsive-hide">由 <strong><a href="./memberlist.php?mode=viewprofile&amp;u=1874" class="username">olddog</a></strong> &raquo; </span>周一 9月 24, 2018 1:14 am
+			</p>
+			
+			
+			
+			<div class="content">还有留qq的憨憨，现在都这么野了么，当年我们留个onion邮箱都得犹豫半天，这不是你们自己的qq8，你们是跟这些qq的user有仇么？</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="页首">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">页首</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+				<div id="p288" class="post has-profile bg1">
+		<div class="inner">
+
+		<dl class="postprofile" id="profile288">
+			<dt class="no-profile-rank no-avatar">
+				<div class="avatar-container">
+																			</div>
+								<a href="./memberlist.php?mode=viewprofile&amp;u=2364" class="username">wmit2322</a>							</dt>
+
+									
+		<dd class="profile-posts"><strong>帖子：</strong> <a href="./search.php?author_id=2364&amp;sr=posts">1</a></dd>		<dd class="profile-joined"><strong>注册时间：</strong> 周四 9月 27, 2018 4:29 pm</dd>		
+		
+						
+						
+		</dl>
+
+		<div class="postbody">
+						<div id="post_content288">
+
+						<h3 ><a href="#p288">Re: 有没有大佬分享几个中文网</a></h3>
+
+													
+						<p class="author">
+									<a class="unread" href="./viewtopic.php?p=288#p288" title="帖子">
+						<i class="icon fa-file fa-fw icon-lightgray icon-md" aria-hidden="true"></i><span class="sr-only">帖子</span>
+					</a>
+								<span class="responsive-hide">由 <strong><a href="./memberlist.php?mode=viewprofile&amp;u=2364" class="username">wmit2322</a></strong> &raquo; </span>周四 9月 27, 2018 4:54 pm
+			</p>
+			
+			
+			
+			<div class="content">这么野的吗？QQ都留了 疯了吗？ 我号都是用的虚假谷歌邮箱 不敢有真实信息。</div>
+
+			
+									
+									
+						</div>
+
+		</div>
+
+				<div class="back2top">
+						<a href="#top" class="top" title="页首">
+				<i class="icon fa-chevron-circle-up fa-fw icon-gray" aria-hidden="true"></i>
+				<span class="sr-only">页首</span>
+			</a>
+					</div>
+		
+		</div>
+	</div>
+
+	<hr class="divider" />
+	
+
+	<div class="action-bar bar-bottom">
+	
+		
+		<div class="dropdown-container dropdown-button-control topic-tools">
+		<span title="主题工具" class="button button-secondary dropdown-trigger dropdown-select">
+			<i class="icon fa-wrench fa-fw" aria-hidden="true"></i>
+			<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+		</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+													<li>
+						<a href="./viewtopic.php?uid=10563&amp;f=5&amp;t=26&amp;watch=topic&amp;start=0&amp;hash=cf133f76" class="watch-topic-link" title="订阅主题" data-ajax="toggle_link" data-toggle-class="icon fa-square-o fa-fw" data-toggle-text="退订主题" data-toggle-url="./viewtopic.php?uid=10563&amp;f=5&amp;t=26&amp;unwatch=topic&amp;start=0&amp;hash=cf133f76" data-update-all=".watch-topic-link">
+							<i class="icon fa-check-square-o fa-fw" aria-hidden="true"></i><span>订阅主题</span>
+						</a>
+					</li>
+													<li>
+						<a href="./viewtopic.php?f=5&amp;t=26&amp;bookmark=1&amp;hash=cf133f76" class="bookmark-link" title="收藏主题" data-ajax="alt_text" data-alt-text="取消收藏" data-update-all=".bookmark-link">
+							<i class="icon fa-bookmark-o fa-fw" aria-hidden="true"></i><span>收藏主题</span>
+						</a>
+					</li>
+																				<li>
+					<a href="./viewtopic.php?f=5&amp;t=26&amp;view=print" title="打印预览" accesskey="p">
+						<i class="icon fa-print fa-fw" aria-hidden="true"></i><span>打印预览</span>
+					</a>
+				</li>
+											</ul>
+		</div>
+	</div>
+
+			<form method="post" action="./viewtopic.php?f=5&amp;t=26">
+		<div class="dropdown-container dropdown-container-left dropdown-button-control sort-tools">
+	<span title="显示排序选项" class="button button-secondary dropdown-trigger dropdown-select">
+		<i class="icon fa-sort-amount-asc fa-fw" aria-hidden="true"></i>
+		<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+	</span>
+	<div class="dropdown hidden">
+		<div class="pointer"><div class="pointer-inner"></div></div>
+		<div class="dropdown-contents">
+			<fieldset class="display-options">
+							<label>显示： <select name="st" id="st"><option value="0" selected="selected">全部帖子</option><option value="1">1天</option><option value="7">7天</option><option value="14">2周</option><option value="30">1个月</option><option value="90">3个月</option><option value="180">6个月</option><option value="365">1年</option></select></label>
+								<label>排序： <select name="sk" id="sk"><option value="a">作者</option><option value="t" selected="selected">发表时间</option><option value="s">标题</option></select></label>
+				<label>排序方向： <select name="sd" id="sd"><option value="a" selected="selected">升序</option><option value="d">降序</option></select></label>
+								<hr class="dashed" />
+				<input type="submit" class="button2" name="sort" value="执行" />
+						</fieldset>
+		</div>
+	</div>
+</div>
+		</form>
+	
+	
+	
+			<div class="pagination">
+			8 帖子
+							&bull; 分页： <strong>1</strong> / <strong>1</strong>
+					</div>
+	</div>
+
+
+<div class="action-bar actions-jump">
+		<p class="jumpbox-return">
+		<a href="./viewforum.php?f=5" class="left-box arrow-left" accesskey="r">
+			<i class="icon fa-angle-left fa-fw icon-black" aria-hidden="true"></i><span>回到 “dark”</span>
+		</a>
+	</p>
+	
+		<div class="jumpbox dropdown-container dropdown-container-right dropdown-up dropdown-left dropdown-button-control" id="jumpbox">
+			<span title="前往 " class="button button-secondary dropdown-trigger dropdown-select">
+				<span>前往 </span>
+				<span class="caret"><i class="icon fa-sort-down fa-fw" aria-hidden="true"></i></span>
+			</span>
+		<div class="dropdown">
+			<div class="pointer"><div class="pointer-inner"></div></div>
+			<ul class="dropdown-contents">
+																				<li><a href="./viewforum.php?f=1" class="jumpbox-cat-link"> <span> 您的第一个分区</span></a></li>
+																<li><a href="./viewforum.php?f=3" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; 新号激活版</span></a></li>
+																<li><a href="./viewforum.php?f=4" class="jumpbox-cat-link"> <span> dark分区</span></a></li>
+																<li><a href="./viewforum.php?f=5" class="jumpbox-sub-link"><span class="spacer"></span> <span>&#8627; &nbsp; dark</span></a></li>
+											</ul>
+		</div>
+	</div>
+
+	</div>
+
+	<div class="stat-block online-list">
+		<h3><a href="./viewonline.php">在线用户</a></h3>
+		<p>正浏览此版面之用户： <a href="./memberlist.php?mode=viewprofile&amp;u=10563" class="username">alfabeta</a> 和 0 访客</p>
+	</div>
+
+			</div>
+
+
+<div id="page-footer" class="page-footer" role="contentinfo">
+	<div class="navbar" role="navigation">
+	<div class="inner">
+
+	<ul id="nav-footer" class="nav-footer linklist" role="menubar">
+		<li class="breadcrumbs">
+									<span class="crumb"><a href="./index.php" data-navbar-reference="index"><i class="icon fa-home fa-fw" aria-hidden="true"></i><span>论坛首页</span></a></span>					</li>
+		
+				<li class="rightside">所有显示的时间是 <span title="Asia/Brunei">UTC+08:00</span></li>
+							<li class="rightside">
+				<a href="./ucp.php?mode=delete_cookies" data-ajax="true" data-refresh="true" role="menuitem">
+					<i class="icon fa-trash fa-fw" aria-hidden="true"></i><span>删除全部论坛 cookie</span>
+				</a>
+			</li>
+							<li class="rightside" data-last-responsive="true">
+					<a href="./memberlist.php" title="查看本站用户的完整列表" role="menuitem">
+						<i class="icon fa-group fa-fw" aria-hidden="true"></i><span>用户列表</span>
+					</a>
+				</li>
+												<li class="rightside" data-last-responsive="true">
+				<a href="./memberlist.php?mode=team" role="menuitem">
+					<i class="icon fa-shield fa-fw" aria-hidden="true"></i><span>管理团队</span>
+				</a>
+			</li>
+							</ul>
+
+	</div>
+</div>
+
+	<div class="copyright">
+				由 <a href="https://www.phpbb.com/">phpBB</a>&reg; Forum Software &copy; phpBB Limited 提供支持
+		<br />简体中文语言由 <a href="https://www.g2soft.net/">David Yin</a> 维护							</div>
+
+	<div id="darkenwrapper" class="darkenwrapper" data-ajax-error-title="AJAX错误" data-ajax-error-text="当处理您的请求时发生错误。" data-ajax-error-text-abort="用户中止请求。" data-ajax-error-text-timeout="您的请求超时；请重试。" data-ajax-error-text-parsererror="请求出错，服务器返回一个无效回复。">
+		<div id="darken" class="darken">&nbsp;</div>
+	</div>
+
+	<div id="phpbb_alert" class="phpbb_alert" data-l-err="错误" data-l-timeout-processing-req="请求超时。">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<h3 class="alert_title">&nbsp;</h3><p class="alert_text"></p>
+	</div>
+	<div id="phpbb_confirm" class="phpbb_alert">
+		<a href="#" class="alert_close">
+			<i class="icon fa-times-circle fa-fw" aria-hidden="true"></i>
+		</a>
+		<div class="alert_text"></div>
+	</div>
+</div>
+
+</div>
+
+<div>
+	<a id="bottom" class="anchor" accesskey="z"></a>
+	</div>
+
+<script type="text/javascript" src="./assets/javascript/jquery.min.js?assets_version=3"></script>
+<script type="text/javascript" src="./assets/javascript/core.js?assets_version=3"></script>
+
+
+
+<script type="text/javascript" src="./styles/prosilver/template/forum_fn.js?assets_version=3"></script>
+<script type="text/javascript" src="./styles/prosilver/template/ajax.js?assets_version=3"></script>
+
+
+
+</body>
+</html>
