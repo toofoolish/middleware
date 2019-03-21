@@ -73,7 +73,7 @@ MYSQL_PASSWORD = '123qwe'
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     # 'lesson3.pipelines.topicpipeline': 300,
-    'lesson3.pipelines.MysqlPipeline': 301,
+    # 'lesson3.pipelines.MysqlPipeline': 301,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
