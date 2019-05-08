@@ -5,12 +5,12 @@ import urllib
 from lesson3.items import OnionItem
 import time, random, os
 class DarkunionSpider(scrapy.Spider):
-    name = 'darkunion'
+    name = 'hotpot'
     # allowed_domains = ['dark']
     start_urls = ['http://almvdkg6vrpmkvk4.onion/']
     post_data = {
-        "username": "alexandrite",
-        "password": "almvdkg6vrpmkvk4",
+        "username": "phosphophyllite",
+        "password": "Phosphophyllite3.5",
         "login": "登录",
     }
     header = {
@@ -23,13 +23,14 @@ class DarkunionSpider(scrapy.Spider):
     }
 
     def start_requests(self):
+        #start web
         for url in self.start_urls:
             yield scrapy.Request(url, callback=self.parse_login, headers=self.header, 
             # meta={'proxy': '127.0.0.1:8118'}
             )
     
     def parse_login(self, response):
-        
+        #login the forum
         autim = response.xpath('//*[@name="autim"]/@value').extract()
         print(autim)
         sid = response.xpath('//*[@name="sid"]/@value').extract()
@@ -44,6 +45,7 @@ class DarkunionSpider(scrapy.Spider):
         )
         
     def parse_after(self, response):
+        #analysis the banner, and go to different webpages
         f = open('web.html', 'w')
         index_url =  response.xpath('//*[contains(@class,"text_index_top")]//@href').extract()
         index_title =  response.xpath('//*[contains(@class,"text_index_top")]/text()').extract()
@@ -53,13 +55,14 @@ class DarkunionSpider(scrapy.Spider):
         base_url = response.url
         for url in index_url:
             f.write(url + '\r\n')
-            if 'q_ea_id' in url and int(url.split('=')[-1]) == 10003:
+            if 'q_ea_id' in url and int(url.split('=')[-1]) in range(10001,10011):
                 aera_url = urllib.parse.urljoin(base_url, url)
                 
                 yield scrapy.Request(aera_url, callback=self.parse_page, headers=self.header)
         f.close()
     
     def parse_page(self, response):
+        #get topic of first page
         base_url = response.url        
         topic_url = response.xpath('//a[text()="打开"]/@href').extract()                
         for url in topic_url:
@@ -71,17 +74,17 @@ class DarkunionSpider(scrapy.Spider):
             yield scrapy.Request(urllib.parse.urljoin(base_url, url), callback=self.parse_item, headers=self.header)
         
         # next_page_sel = response.xpath('//button[contains(@class,"page_b2")]')[-1]
-        next_page = response.xpath('//button[contains(@class,"page_b2")]/following::a[1]/@href').extract()
-        if next_page:
-            # f = open('pages', 'a')
-            next_url = urllib.parse.urljoin(base_url, next_page[-1])
-            # print('***********************')
-            # print(next_url)
-            # print('***********************')
-            # f.write(next_url + '\r\n')
-            # f.close()
-            time.sleep(5 + round(random.random()*5,1))
-            yield scrapy.Request(next_url, callback=self.parse_page, headers=self.header)               
+        # next_page = response.xpath('//button[contains(@class,"page_b2")]/following::a[1]/@href').extract()
+        # if next_page:
+        #     # f = open('pages', 'a')
+        #     next_url = urllib.parse.urljoin(base_url, next_page[-1])
+        #     # print('***********************')
+        #     # print(next_url)
+        #     # print('***********************')
+        #     # f.write(next_url + '\r\n')
+        #     # f.close()
+        #     time.sleep(5 + round(random.random()*5,1))
+        #     yield scrapy.Request(next_url, callback=self.parse_page, headers=self.header)               
 
     def parse_item(self, response):
         # print('*********************************')
