@@ -1,5 +1,24 @@
-import os
+import os, time, random
 try:
     os.system("torsocks scrapy crawl spider_10001")
+    time.sleep(random.randint(100,200))
+    os.system("torsocks scrapy crawl spider_10002")
+    time.sleep(random.randint(100,200))
+    os.system("torsocks scrapy crawl spider_10003")
+    time.sleep(random.randint(100,200))
+    os.system("torsocks scrapy crawl spider_10004")
+    time.sleep(random.randint(100,200))
+    os.system("torsocks scrapy crawl spider_10005")
+    time.sleep(random.randint(100,200))
+    os.system("torsocks scrapy crawl spider_10006")
+    time.sleep(random.randint(100,200))
+    os.system("torsocks scrapy crawl spider_10007")
+    time.sleep(random.randint(100,200))
+    os.system("torsocks scrapy crawl spider_10008")
+    time.sleep(random.randint(100,200))
+    os.system("torsocks scrapy crawl spider_10009")
+    time.sleep(random.randint(100,200))
+    os.system("torsocks scrapy crawl spider_10010")
+    time.sleep(random.randint(100,200))
 except:
     print("sonething is wrong!")

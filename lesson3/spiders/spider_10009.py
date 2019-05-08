@@ -5,7 +5,7 @@ import urllib
 from lesson3.items import OnionItem
 import time, random, os
 class DarkunionSpider(scrapy.Spider):
-    name = 'spider_10001'
+    name = 'spider_10009'
     # allowed_domains = ['dark']
     start_urls = ['http://almvdkg6vrpmkvk4.onion/']
     post_data = {
@@ -51,7 +51,7 @@ class DarkunionSpider(scrapy.Spider):
         base_url = response.url
         for url in index_url:
             f.write(url + '\r\n')
-            if 'q_ea_id' in url and int(url.split('=')[-1]) == 10001:
+            if 'q_ea_id' in url and int(url.split('=')[-1]) == 10009:
                 aera_url = urllib.parse.urljoin(base_url, url)
                 
                 yield scrapy.Request(aera_url, callback=self.parse_page, headers=self.header)

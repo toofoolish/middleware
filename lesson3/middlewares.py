@@ -6,7 +6,7 @@
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
-
+from scrapy.downloadermiddlewares.retry import RetryMiddleware
 
 class Lesson3SpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
@@ -109,3 +109,7 @@ class ProxyMiddleware(object):
         pass
     def process_request(self, request, spider):
         request.meta['proxy'] = '127.0.0.1:9050'
+
+
+class MyRetryMiddleware(RetryMiddleware):
+    pass
